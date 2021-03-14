@@ -46,6 +46,10 @@
 		7CEDBFCD25FC6F7C00EA76F5 /* SelectHeroes.json in Resources */ = {isa = PBXBuildFile; fileRef = 7CEDBFCC25FC6F7C00EA76F5 /* SelectHeroes.json */; };
 		7CFB5CA825FD5EFA00FB2B5B /* PreferredViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFB5CA625FD5EFA00FB2B5B /* PreferredViewController.swift */; };
 		7CFB5CA925FD5EFA00FB2B5B /* PreferredViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CFB5CA725FD5EFA00FB2B5B /* PreferredViewController.xib */; };
+		7CFB5CAE25FDCB1000FB2B5B /* PreferredTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFB5CAC25FDCB1000FB2B5B /* PreferredTableViewCell.swift */; };
+		7CFB5CAF25FDCB1000FB2B5B /* PreferredTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CFB5CAD25FDCB1000FB2B5B /* PreferredTableViewCell.xib */; };
+		7CFB5CB725FDCCF900FB2B5B /* SuccesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFB5CB525FDCCF900FB2B5B /* SuccesViewController.swift */; };
+		7CFB5CB825FDCCF900FB2B5B /* SuccesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CFB5CB625FDCCF900FB2B5B /* SuccesViewController.xib */; };
 		B07E15853F6023A083B04C89 /* Pods_Heroi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBFD0527C24D006DF782ABF0 /* Pods_Heroi.framework */; };
 		C55899530B09D6AEE86B6567 /* Pods_Heroi_HeroiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA8C6276452EB407F07E23A /* Pods_Heroi_HeroiUITests.framework */; };
 /* End PBXBuildFile section */
@@ -115,6 +119,10 @@
 		7CEDBFCC25FC6F7C00EA76F5 /* SelectHeroes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SelectHeroes.json; sourceTree = "<group>"; };
 		7CFB5CA625FD5EFA00FB2B5B /* PreferredViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferredViewController.swift; sourceTree = "<group>"; };
 		7CFB5CA725FD5EFA00FB2B5B /* PreferredViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferredViewController.xib; sourceTree = "<group>"; };
+		7CFB5CAC25FDCB1000FB2B5B /* PreferredTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferredTableViewCell.swift; sourceTree = "<group>"; };
+		7CFB5CAD25FDCB1000FB2B5B /* PreferredTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreferredTableViewCell.xib; sourceTree = "<group>"; };
+		7CFB5CB525FDCCF900FB2B5B /* SuccesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccesViewController.swift; sourceTree = "<group>"; };
+		7CFB5CB625FDCCF900FB2B5B /* SuccesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuccesViewController.xib; sourceTree = "<group>"; };
 		86BC0F0628B35F17CCE9DAA5 /* Pods-Heroi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heroi.debug.xcconfig"; path = "Target Support Files/Pods-Heroi/Pods-Heroi.debug.xcconfig"; sourceTree = "<group>"; };
 		B4B7064B055028A9B25E432B /* Pods-Heroi-HeroiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heroi-HeroiUITests.release.xcconfig"; path = "Target Support Files/Pods-Heroi-HeroiUITests/Pods-Heroi-HeroiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CCA8C6276452EB407F07E23A /* Pods_Heroi_HeroiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Heroi_HeroiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -258,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				7CEDBFBC25FC5F7200EA76F5 /* Select */,
+				7CFB5CB325FDCCB900FB2B5B /* Succes */,
 				7CFB5CAA25FDC3B300FB2B5B /* Quiz */,
 				7CFB5CA225FD5D3000FB2B5B /* Preferred */,
 				7CEDBF6D25F45F8200EA76F5 /* PreLogin */,
@@ -462,6 +471,7 @@
 			isa = PBXGroup;
 			children = (
 				7CFB5CA525FD5D8000FB2B5B /* Model */,
+				7CFB5CAB25FDCAE500FB2B5B /* Cell */,
 				7CFB5CA325FD5D5B00FB2B5B /* View */,
 				7CFB5CA425FD5D6C00FB2B5B /* ViewModel */,
 			);
@@ -494,8 +504,58 @@
 		7CFB5CAA25FDC3B300FB2B5B /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				7CFB5CB025FDCC4D00FB2B5B /* View */,
+				7CFB5CB125FDCC5A00FB2B5B /* ViewModel */,
+				7CFB5CB225FDCC7200FB2B5B /* Model */,
 			);
 			path = Quiz;
+			sourceTree = "<group>";
+		};
+		7CFB5CAB25FDCAE500FB2B5B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7CFB5CAC25FDCB1000FB2B5B /* PreferredTableViewCell.swift */,
+				7CFB5CAD25FDCB1000FB2B5B /* PreferredTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		7CFB5CB025FDCC4D00FB2B5B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7CFB5CB125FDCC5A00FB2B5B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7CFB5CB225FDCC7200FB2B5B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7CFB5CB325FDCCB900FB2B5B /* Succes */ = {
+			isa = PBXGroup;
+			children = (
+				7CFB5CB425FDCCD000FB2B5B /* View */,
+			);
+			path = Succes;
+			sourceTree = "<group>";
+		};
+		7CFB5CB425FDCCD000FB2B5B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7CFB5CB525FDCCF900FB2B5B /* SuccesViewController.swift */,
+				7CFB5CB625FDCCF900FB2B5B /* SuccesViewController.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -614,12 +674,14 @@
 				7CEDBF8A25F4611800EA76F5 /* LoginView.xib in Resources */,
 				7CEDBFB825FB1FEE00EA76F5 /* HomeCell.xib in Resources */,
 				7CFB5CA925FD5EFA00FB2B5B /* PreferredViewController.xib in Resources */,
+				7CFB5CAF25FDCB1000FB2B5B /* PreferredTableViewCell.xib in Resources */,
 				7CEDBF9A25F4613C00EA76F5 /* PreLoginView.xib in Resources */,
 				7CEDBFC725FC61A200EA76F5 /* SelectView.xib in Resources */,
 				7CEDBFCB25FC6A1200EA76F5 /* SelectCell.xib in Resources */,
 				7CEDBF8325F460EE00EA76F5 /* EmailMock.json in Resources */,
 				7CEDBF9525F4612500EA76F5 /* SelecioneEmailView.xib in Resources */,
 				7CEDBFAB25FB17A000EA76F5 /* HomeMock.json in Resources */,
+				7CFB5CB825FDCCF900FB2B5B /* SuccesViewController.xib in Resources */,
 				7CEDBF9725F4612500EA76F5 /* SelectTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -756,7 +818,9 @@
 				7CEDBF8B25F4611800EA76F5 /* LoginViewController.swift in Sources */,
 				7CEDBFB025FB185C00EA76F5 /* HomeModel.swift in Sources */,
 				7CEDBF7C25F460C100EA76F5 /* UITableViewCell+Extrension.swift in Sources */,
+				7CFB5CAE25FDCB1000FB2B5B /* PreferredTableViewCell.swift in Sources */,
 				7CEDBF3A25F45EC900EA76F5 /* AppDelegate.swift in Sources */,
+				7CFB5CB725FDCCF900FB2B5B /* SuccesViewController.swift in Sources */,
 				7CEDBF7F25F460C100EA76F5 /* UICollectionViewCell+Extension.swift in Sources */,
 				7CEDBFA625F956DB00EA76F5 /* CustomButton.swift in Sources */,
 				7CEDBF9225F4612500EA76F5 /* SelecioneEmailViewController.swift in Sources */,
