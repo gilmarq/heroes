@@ -1,0 +1,16 @@
+[{
+    "logo": "google",
+    "text": "Logar pelo e-mail da Google"
+},
+ {
+     "logo": "apple",
+     "text": "Logar pelo e-mail da Apple"
+ },
+ {
+     "logo": "outlock",
+     "text": "Logar pelo e-mail da Outlock"
+ },
+ {
+     "logo": "user",
+     "text": "Logar com e-mail cadastrado"
+ }]
