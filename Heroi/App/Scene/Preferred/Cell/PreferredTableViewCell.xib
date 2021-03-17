@@ -17,31 +17,27 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0lC-mC-7OB">
-                        <rect key="frame" x="0.0" y="5.5" width="50" height="50"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="50" id="2RB-K6-peD"/>
-                            <constraint firstAttribute="height" constant="50" id="dav-2E-JK3"/>
-                        </constraints>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="disney" translatesAutoresizingMaskIntoConstraints="NO" id="0lC-mC-7OB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qcV-CN-1OZ">
-                        <rect key="frame" x="70" y="20" width="42" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="qcV-CN-1OZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="4B9-wZ-oXH"/>
                     <constraint firstItem="0lC-mC-7OB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="CsA-JS-VBy"/>
-                    <constraint firstItem="0lC-mC-7OB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="baw-SJ-YCM"/>
-                    <constraint firstItem="qcV-CN-1OZ" firstAttribute="leading" secondItem="0lC-mC-7OB" secondAttribute="trailing" constant="20" id="d06-CN-69U"/>
-                    <constraint firstAttribute="bottom" secondItem="qcV-CN-1OZ" secondAttribute="bottom" constant="20" id="gys-KY-AW5"/>
-                    <constraint firstItem="qcV-CN-1OZ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="k58-co-i10"/>
+                    <constraint firstItem="0lC-mC-7OB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ERo-ra-mSe"/>
+                    <constraint firstAttribute="trailing" secondItem="0lC-mC-7OB" secondAttribute="trailing" id="JJe-67-0ng"/>
+                    <constraint firstAttribute="bottom" secondItem="0lC-mC-7OB" secondAttribute="bottom" id="Psf-Xq-Mwa"/>
+                    <constraint firstItem="0lC-mC-7OB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="uAA-Ih-1fF"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cardView" destination="H2p-sc-9uM" id="dja-eM-LTw"/>
+                <outlet property="imageHereo" destination="0lC-mC-7OB" id="rtn-zd-ptH"/>
+            </connections>
             <point key="canvasLocation" x="50.724637681159422" y="61.272321428571423"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="disney" width="299" height="169"/>
+    </resources>
 </document>

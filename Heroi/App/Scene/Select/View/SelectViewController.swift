@@ -9,14 +9,19 @@
 import UIKit
 
 class SelectViewController: UIViewController {
-
+    
+    var viewModel = SelectViewModel()
+    var value = ""
+    
     @IBOutlet weak var collectionView: UICollectionView!    
     @IBOutlet weak var heroesImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.register(SelectCell.self)
-         navigationController?.setNavigationBarHidden(false, animated: true)
+        viewModel.formtJson()
+        navigationController?.setNavigationBarHidden(false, animated: true)
+        self.heroesImage.image = UIImage(named: value)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -24,7 +29,9 @@ class SelectViewController: UIViewController {
     }
     
     //MARK: -INIT
-    init() {
+
+    init( ) {
+ 
         super.init(nibName: "SelectView", bundle : nil)
     }
     
@@ -37,13 +44,13 @@ class SelectViewController: UIViewController {
 extension SelectViewController: UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
-        return 10
+        return viewModel.select.count
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-       let controller = SelectViewController()
-       self.navigationController?.pushViewController(controller, animated: true)
-     }
+        let controller = PreferredViewController()
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
 }
 
 //MARK:- UICollectionViewDataSource
@@ -53,21 +60,22 @@ extension SelectViewController: UICollectionViewDataSource {
         
         
         let cell: SelectCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
-       // cell.setup(with: homeViewModel.universe[indexPath.row])
+        cell.setup(with: viewModel.select[indexPath.row])
         return cell
     }
 }
-////MARK:- UICollectionViewDelegateFlowLayout
-//extension SelectViewController: UICollectionViewDelegateFlowLayout {
-//    
-//    func  collectionView (_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
-//                          sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        
-//        let width: CGFloat = (self.collectionView.bounds.width / 2) - 8
-//        let heigth = self.collectionView.bounds.height / 5
-//        
-//        return CGSize(width: width, height: heigth)
-//    }
-//    
-//}
+
+//MARK:- UICollectionViewDelegateFlowLayout
+extension SelectViewController: UICollectionViewDelegateFlowLayout {
+    
+    func  collectionView (_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
+                          sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let width: CGFloat = (self.collectionView.bounds.width / 2) - 8
+        let heigth = self.collectionView.bounds.height / 5
+        
+        return CGSize(width: width, height: heigth)
+    }
+    
+}
 

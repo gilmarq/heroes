@@ -10,6 +10,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PreferredViewController" customModule="Heroi" customModuleProvider="target">
             <connections>
+                <outlet property="TableView" destination="TLZ-L5-Ahb" id="dF7-fJ-aDI"/>
+                <outlet property="cardTitle" destination="Iqm-BR-TVT" id="Pua-U1-VtP"/>
+                <outlet property="oneTile" destination="Iqm-BR-TVT" id="Oc9-Ck-nkS"/>
+                <outlet property="subTitle" destination="1xB-ib-JZV" id="ygK-hB-i9V"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,49 +23,56 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Us-ph-gTz">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="85.5"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marvel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iqm-BR-TVT">
-                            <rect key="frame" x="67.5" y="20" width="185" height="36"/>
+                            <rect key="frame" x="17.5" y="2" width="285" height="60"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="185" id="7Th-Zs-EXx"/>
+                                <constraint firstAttribute="width" constant="285" id="7Th-Zs-EXx"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="item que escolheru " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xB-ib-JZV">
-                            <rect key="frame" x="16" y="76" width="288" height="21"/>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <rect key="frame" x="16" y="62" width="288" height="13.5"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="bottom" secondItem="1xB-ib-JZV" secondAttribute="bottom" constant="31" id="6eI-Li-S0D"/>
+                        <constraint firstAttribute="bottom" secondItem="1xB-ib-JZV" secondAttribute="bottom" constant="10" id="01A-r8-80U"/>
                         <constraint firstItem="1xB-ib-JZV" firstAttribute="centerX" secondItem="8Us-ph-gTz" secondAttribute="centerX" id="7RU-J2-uWV"/>
                         <constraint firstAttribute="trailing" secondItem="1xB-ib-JZV" secondAttribute="trailing" constant="16" id="C0J-Uy-bUI"/>
-                        <constraint firstItem="1xB-ib-JZV" firstAttribute="top" secondItem="Iqm-BR-TVT" secondAttribute="bottom" constant="20" id="Cnc-bg-JEo"/>
-                        <constraint firstItem="Iqm-BR-TVT" firstAttribute="top" secondItem="8Us-ph-gTz" secondAttribute="top" constant="20" id="VVk-VU-JfR"/>
+                        <constraint firstItem="1xB-ib-JZV" firstAttribute="top" secondItem="Iqm-BR-TVT" secondAttribute="bottom" id="Cnc-bg-JEo"/>
+                        <constraint firstItem="Iqm-BR-TVT" firstAttribute="top" secondItem="8Us-ph-gTz" secondAttribute="top" constant="2" id="VVk-VU-JfR"/>
                         <constraint firstItem="1xB-ib-JZV" firstAttribute="leading" secondItem="8Us-ph-gTz" secondAttribute="leading" constant="16" id="hHi-Qt-aIT"/>
                         <constraint firstItem="Iqm-BR-TVT" firstAttribute="centerX" secondItem="8Us-ph-gTz" secondAttribute="centerX" id="tQO-KG-8xq"/>
                     </constraints>
                 </view>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TLZ-L5-Ahb">
-                    <rect key="frame" x="0.0" y="128" width="320" height="440"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="144" sectionHeaderHeight="1" estimatedSectionHeaderHeight="26" sectionFooterHeight="1" estimatedSectionFooterHeight="17" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TLZ-L5-Ahb">
+                    <rect key="frame" x="0.0" y="95.5" width="320" height="472.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <rect key="contentStretch" x="0.84999999999999998" y="0.0" width="1" height="1"/>
+                    <inset key="scrollIndicatorInsets" minX="5" minY="23" maxX="5" maxY="5"/>
+                    <viewLayoutGuide key="contentLayoutGuide" id="gVT-OA-AnI"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="Yo8-sA-k4V"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Yhe-Cu-CmO"/>
+                        <outlet property="delegate" destination="-1" id="nXv-fB-GQA"/>
+                    </connections>
                 </tableView>
             </subviews>
             <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="TLZ-L5-Ahb" firstAttribute="top" secondItem="8Us-ph-gTz" secondAttribute="bottom" id="C0C-2R-8cK"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="8Us-ph-gTz" secondAttribute="bottom" constant="440" id="O2U-td-sON"/>
                 <constraint firstAttribute="bottom" secondItem="TLZ-L5-Ahb" secondAttribute="bottom" id="TMd-jU-Ag7"/>
                 <constraint firstItem="TLZ-L5-Ahb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="b0Z-eX-kPj"/>
                 <constraint firstItem="TLZ-L5-Ahb" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="kri-ya-jFa"/>
                 <constraint firstItem="8Us-ph-gTz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="tZF-Uf-pmP"/>
                 <constraint firstAttribute="trailing" secondItem="8Us-ph-gTz" secondAttribute="trailing" id="wOx-sz-75N"/>
+                <constraint firstItem="TLZ-L5-Ahb" firstAttribute="top" secondItem="8Us-ph-gTz" secondAttribute="bottom" constant="10" id="wPu-3Z-H7g"/>
                 <constraint firstItem="8Us-ph-gTz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="xiN-ZT-5OH"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

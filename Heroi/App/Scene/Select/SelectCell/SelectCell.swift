@@ -18,6 +18,9 @@ class SelectCell: UICollectionViewCell,NibLoadableView ,ReusableView  {
         super.awakeFromNib()
         setupCardView()
     }
+    func setup(with text: SelectModel) {
+        self.textLabel.text = text.text
+    }
     
     func setupCardView() {
         cardView.layer.masksToBounds = true

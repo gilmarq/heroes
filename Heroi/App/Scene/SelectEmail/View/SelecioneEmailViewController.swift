@@ -58,5 +58,4 @@ extension SelecioneEmailViewController: UITableViewDataSource {
          cell.setup(with: select.email[indexPath.row])
         return cell
     }
-    
 }

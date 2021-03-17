@@ -8,26 +8,42 @@
 
 import UIKit
 
+
+protocol CellDelegate: class {
+    func did(cell: HomeCell)
+}
+
 class HomeCell: UICollectionViewCell, NibLoadableView ,ReusableView {
     
-    @IBOutlet private weak var valueLabel: UILabel!
+    @IBOutlet weak var imageCard: UIImageView!
     @IBOutlet weak var cardView: UIView!
-    
+    var home: HomeModel?
+    var veue = ""
+  
+    var delegate: CellDelegate?
+ 
     override func awakeFromNib() {
         super.awakeFromNib()
         setupCard()
     }
+    
     func setup(with home: HomeModel) {
-        self.valueLabel.text = home.text
+        self.home = home
+        self.veue = home.image
+        self.imageCard.image = UIImage(named: home.image)
+    }
+    
+    func teste(with home: HomeModel){
+        print(home.image)
+        self.veue = home.image
+        
     }
     
     func setupCard(){
         cardView.layer.masksToBounds = true
         cardView.layer.borderColor = UIColor.lightGray.cgColor
-        cardView.layer.borderWidth = 2
+        cardView.layer.borderWidth = 1
         cardView.layer.cornerRadius = 10
-        
     }
-    
     
 }

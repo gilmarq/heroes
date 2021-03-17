@@ -8,17 +8,31 @@
 
 import UIKit
 
-class PreferredTableViewCell: UITableViewCell {
+class PreferredTableViewCell: UITableViewCell, NibLoadableView, ReusableView {
 
+    @IBOutlet weak var cardView: UIView!
+    @IBOutlet weak var imageHereo: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        setupView()
     }
 
+    func setup(with preferred: PreferredModal) {
+        self.imageHereo.image = UIImage(named: preferred.logo)
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
+    
+    func setupView(){
+           cardView.layer.masksToBounds = true
+           cardView.layer.cornerRadius =  10
+           cardView.layer.borderWidth =  1
+           cardView.layer.borderColor = UIColor.lightGray.cgColor
+           imageHereo.layer.masksToBounds = true
+           imageHereo.layer.cornerRadius = 10
+       }
     
 }

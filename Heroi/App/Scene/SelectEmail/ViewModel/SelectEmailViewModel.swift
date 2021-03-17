@@ -17,13 +17,4 @@ class SelectEmailViewModel {
     func loadJson(){
            email = [EmailModel].formatJson("EmailMock") ?? []
        }
-
-    func teste(email : EmailModel) {
-        logo =  email.logo
-        text =  email.text
-
-    }
-    
-    
-    
 }

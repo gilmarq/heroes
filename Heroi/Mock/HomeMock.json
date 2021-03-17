@@ -1,12 +1,12 @@
 [{
-    "text": "Marvel"
+    "image": "Marvel"
 },
  {
-     "text": "DC"
+     "image": "DC"
  },
  {
-     "text": "Star Wars"
+     "image": "StarWars"
  },
  {
-     "text": "Disney"
+     "image": "disney"
  }]
