@@ -13,15 +13,14 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     var universe: [HomeModel] = []
     var homeViewModel = HomeViewModel()
-   // let homes: HomeModel
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.register(HomeCell.self)
         homeViewModel.formtJson()
         
     }
+    
     override func viewWillDisappear(_ animated: Bool) {
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
@@ -35,13 +34,6 @@ class HomeViewController: UIViewController {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-//
-//    func showValidation(_ home: HomeModel, value: String) {
-//        let controller =  SelectViewController(home: home, value: value)
-//
-//        controller.delegate = self
-//        present(controller, animated: true, completion: nil)
-    //}
 }
 
 //MARK: - UICollectionViewDelegate
@@ -94,19 +86,3 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     }
     
 }
-
-//extension HomeViewController: SelectDelegate {
-//    func didContinue(view: SelectViewController) {
-//        self.navigationController?.pushViewController(SelectViewController(home: view.home, value: view.value), animated: true)
-//    }
-//
-//
-//}
-//
-//extension HomeViewController: CellDelegate {
-//    func did(cell: HomeCell) {
-//        guard let home =  cell.home else { return }
-//        showValidation(home , value: cell.value)
-//    }
-//
-//}

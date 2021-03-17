@@ -14,6 +14,8 @@ class SelectCell: UICollectionViewCell,NibLoadableView ,ReusableView  {
     @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var title: UILabel!
     
+    var value = ""
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         setupCardView()

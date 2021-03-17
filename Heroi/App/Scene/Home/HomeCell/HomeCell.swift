@@ -34,9 +34,7 @@ class HomeCell: UICollectionViewCell, NibLoadableView ,ReusableView {
     }
     
     func teste(with home: HomeModel){
-        print(home.image)
         self.veue = home.image
-        
     }
     
     func setupCard(){
