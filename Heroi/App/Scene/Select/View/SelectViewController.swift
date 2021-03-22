@@ -29,7 +29,6 @@ class SelectViewController: UIViewController {
     }
     
     //MARK: -INIT
-
     init( ) {
  
         super.init(nibName: "SelectView", bundle : nil)
@@ -58,24 +57,12 @@ extension SelectViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        
+        let controller = PreferredViewController()
         let cell: SelectCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
         cell.setup(with: viewModel.select[indexPath.row])
+        controller.value = cell.value
+       
         return cell
     }
-}
 
-//MARK:- UICollectionViewDelegateFlowLayout
-extension SelectViewController: UICollectionViewDelegateFlowLayout {
-    
-    func  collectionView (_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
-                          sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        let width: CGFloat = (self.collectionView.bounds.width / 2) - 8
-        let heigth = self.collectionView.bounds.height / 5
-        
-        return CGSize(width: width, height: heigth)
-    }
-    
 }
-

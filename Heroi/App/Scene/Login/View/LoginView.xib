@@ -13,9 +13,10 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="ProjetoCadastro" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Heroi" customModuleProvider="target">
             <connections>
                 <outlet property="eMail" destination="qHr-rf-EUl" id="F9z-aO-SFf"/>
+                <outlet property="msgError" destination="3hC-fO-TaP" id="szI-St-dtO"/>
                 <outlet property="passWord" destination="2Oi-DA-7Wu" id="AiZ-wA-H23"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -40,7 +41,7 @@
                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmG-zJ-kcu" customClass="CustomButton" customModule="ProjetoCadastro" customModuleProvider="target">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmG-zJ-kcu" customClass="CustomButton" customModule="Heroi" customModuleProvider="target">
                     <rect key="frame" x="16" y="483" width="288" height="55"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="55" id="ZGL-BS-wKn"/>
@@ -62,6 +63,12 @@
                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail ou senha são invalidos " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hC-fO-TaP">
+                    <rect key="frame" x="69" y="346" width="182" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -71,12 +78,14 @@
                 <constraint firstItem="2Oi-DA-7Wu" firstAttribute="trailing" secondItem="qHr-rf-EUl" secondAttribute="trailing" id="8a9-NX-jtx"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dmG-zJ-kcu" secondAttribute="trailing" constant="16" id="8bp-N5-kk8"/>
                 <constraint firstItem="2Oi-DA-7Wu" firstAttribute="top" secondItem="qHr-rf-EUl" secondAttribute="bottom" constant="8" id="9Xa-LM-xhS"/>
+                <constraint firstItem="3hC-fO-TaP" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Kfb-tl-soc"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BM0-K2-lDV" secondAttribute="trailing" constant="16" id="Nlq-hR-11J"/>
                 <constraint firstItem="qHr-rf-EUl" firstAttribute="trailing" secondItem="BM0-K2-lDV" secondAttribute="trailing" id="Svq-Z7-ATQ"/>
                 <constraint firstItem="BM0-K2-lDV" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="160" id="UL8-At-BEb"/>
                 <constraint firstItem="qHr-rf-EUl" firstAttribute="top" secondItem="BM0-K2-lDV" secondAttribute="bottom" constant="40" id="XxV-TT-c6j"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="dmG-zJ-kcu" secondAttribute="bottom" constant="30" id="kYN-KS-v6e"/>
                 <constraint firstItem="2Oi-DA-7Wu" firstAttribute="leading" secondItem="qHr-rf-EUl" secondAttribute="leading" id="v5I-5h-pJG"/>
+                <constraint firstItem="3hC-fO-TaP" firstAttribute="top" secondItem="2Oi-DA-7Wu" secondAttribute="bottom" constant="8" id="vr7-BY-jGK"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="140.625" y="109.85915492957747"/>

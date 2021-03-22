@@ -10,32 +10,28 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="HomeCell" customModule="Heroi" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="120" height="60"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="" id="gTV-IL-0wX" customClass="HomeCell" customModule="Heroi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="120" height="60"/>
+                <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IqK-Xx-WkM">
-                        <rect key="frame" x="0.0" y="0.0" width="120" height="60"/>
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DC" translatesAutoresizingMaskIntoConstraints="NO" id="k9V-jV-Hn1">
-                                <rect key="frame" x="0.0" y="0.0" width="120" height="60"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="4Zl-eh-KIS"/>
-                                    <constraint firstAttribute="height" constant="60" id="Lkf-Jm-phZ"/>
-                                    <constraint firstAttribute="width" constant="120" id="Wtl-aL-Wjv"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="cGf-hP-Sgk"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StarWars" translatesAutoresizingMaskIntoConstraints="NO" id="k9V-jV-Hn1">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="k9V-jV-Hn1" firstAttribute="top" secondItem="IqK-Xx-WkM" secondAttribute="top" id="RxO-HS-wuV"/>
-                            <constraint firstItem="k9V-jV-Hn1" firstAttribute="leading" secondItem="IqK-Xx-WkM" secondAttribute="leading" id="UGv-r3-zqN"/>
-                            <constraint firstAttribute="trailing" secondItem="k9V-jV-Hn1" secondAttribute="trailing" id="egk-N4-EHo"/>
-                            <constraint firstAttribute="bottom" secondItem="k9V-jV-Hn1" secondAttribute="bottom" id="fmT-Fh-WqD"/>
+                            <constraint firstItem="k9V-jV-Hn1" firstAttribute="leading" secondItem="IqK-Xx-WkM" secondAttribute="leading" id="2NH-Jd-e1s"/>
+                            <constraint firstAttribute="bottom" secondItem="k9V-jV-Hn1" secondAttribute="bottom" id="MbZ-ZJ-zvB"/>
+                            <constraint firstAttribute="trailing" secondItem="k9V-jV-Hn1" secondAttribute="trailing" id="krV-FE-h6d"/>
+                            <constraint firstAttribute="width" constant="200" id="mRg-JA-9Eh"/>
+                            <constraint firstItem="k9V-jV-Hn1" firstAttribute="top" secondItem="IqK-Xx-WkM" secondAttribute="top" id="wFN-Hi-l3C"/>
+                            <constraint firstAttribute="height" constant="50" id="yEK-rP-cAJ"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -48,15 +44,15 @@
                 <constraint firstAttribute="bottom" secondItem="IqK-Xx-WkM" secondAttribute="bottom" id="WzR-az-wlB"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <size key="customSize" width="120" height="60"/>
+            <size key="customSize" width="220" height="101"/>
             <connections>
                 <outlet property="cardView" destination="IqK-Xx-WkM" id="Zgp-lS-8nh"/>
                 <outlet property="imageCard" destination="k9V-jV-Hn1" id="xTc-sx-EBc"/>
             </connections>
-            <point key="canvasLocation" x="243.47826086956525" y="104.46428571428571"/>
+            <point key="canvasLocation" x="315.94202898550725" y="104.46428571428571"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="DC" width="636" height="275"/>
+        <image name="StarWars" width="618" height="350"/>
     </resources>
 </document>

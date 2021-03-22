@@ -11,6 +11,7 @@ import UIKit
 class LoginViewController: UIViewController {
     
     // MARK: - outlet
+    @IBOutlet weak var msgError: UILabel!
     @IBOutlet private weak var passWord: UITextField! {
         didSet{
             passWord.setLefPass(image: UIImage(named:"key") ?? UIImage())
@@ -30,7 +31,7 @@ class LoginViewController: UIViewController {
     // MARK: - cyclo view
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        msgError.isHidden = true 
         
     }
     

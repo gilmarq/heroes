@@ -20,11 +20,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="bDq-kl-hPY">
-                    <rect key="frame" x="0.0" y="39" width="320" height="529"/>
+                    <rect key="frame" x="10" y="39" width="300" height="519"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2S9-1g-NWQ">
-                        <size key="itemSize" width="99" height="100"/>
-                        <size key="estimatedItemSize" width="90" height="90"/>
+                        <size key="itemSize" width="0.0" height="0.0"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -34,21 +33,21 @@
                         <outlet property="delegate" destination="-1" id="bRH-BG-FDU"/>
                     </connections>
                 </collectionView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual universo você mais gosta ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smh-ef-F8X">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Qual universo você mais gosta ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smh-ef-F8X">
                     <rect key="frame" x="16" y="10" width="288" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                     <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="bDq-kl-hPY" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Anr-YJ-VOY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bDq-kl-hPY" secondAttribute="trailing" constant="10" id="1kq-B7-V7Z"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bDq-kl-hPY" secondAttribute="bottom" constant="10" id="39i-V1-nZB"/>
                 <constraint firstItem="bDq-kl-hPY" firstAttribute="top" secondItem="smh-ef-F8X" secondAttribute="bottom" constant="8" id="KSL-ky-9gf"/>
-                <constraint firstItem="bDq-kl-hPY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Ta6-6O-03T"/>
                 <constraint firstItem="smh-ef-F8X" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="cZ0-mL-Gve"/>
-                <constraint firstItem="bDq-kl-hPY" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="dbl-fl-nKc"/>
                 <constraint firstItem="smh-ef-F8X" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="gdN-oN-ZX4"/>
+                <constraint firstItem="bDq-kl-hPY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="gkh-N5-THC"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="smh-ef-F8X" secondAttribute="trailing" constant="16" id="veA-Gs-hVy"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

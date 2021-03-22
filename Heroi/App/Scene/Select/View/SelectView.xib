@@ -20,7 +20,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DC" translatesAutoresizingMaskIntoConstraints="NO" id="HpD-hd-Fgq">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DC" translatesAutoresizingMaskIntoConstraints="NO" id="HpD-hd-Fgq">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="258.5"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selecione o que você deseja conhecer " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BoQ-dK-P0P">
@@ -30,7 +30,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="TBe-hv-j6f">
-                    <rect key="frame" x="0.0" y="302" width="320" height="266"/>
+                    <rect key="frame" x="10" y="302" width="320" height="266"/>
                     <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="VuS-8n-zbr">
                         <size key="itemSize" width="120" height="250"/>
@@ -47,7 +47,7 @@
             <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="BoQ-dK-P0P" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="2HI-2e-5Gj"/>
-                <constraint firstItem="TBe-hv-j6f" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="FCS-xJ-LOJ"/>
+                <constraint firstItem="TBe-hv-j6f" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="FCS-xJ-LOJ"/>
                 <constraint firstItem="TBe-hv-j6f" firstAttribute="top" secondItem="BoQ-dK-P0P" secondAttribute="bottom" constant="8" id="LVG-KT-AxX"/>
                 <constraint firstItem="BoQ-dK-P0P" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Nka-0j-cXk"/>
                 <constraint firstAttribute="bottom" secondItem="TBe-hv-j6f" secondAttribute="bottom" id="R1q-us-5Ar"/>
@@ -56,7 +56,7 @@
                 <constraint firstItem="BoQ-dK-P0P" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="e5W-Tu-0Xw"/>
                 <constraint firstItem="BoQ-dK-P0P" firstAttribute="top" secondItem="HpD-hd-Fgq" secondAttribute="bottom" constant="16" id="fe1-bd-Jva"/>
                 <constraint firstItem="HpD-hd-Fgq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gbs-uZ-O6G"/>
-                <constraint firstItem="TBe-hv-j6f" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="kDY-3J-SMF"/>
+                <constraint firstItem="TBe-hv-j6f" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="10" id="kDY-3J-SMF"/>
                 <constraint firstItem="HpD-hd-Fgq" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="kOK-iQ-CY7"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

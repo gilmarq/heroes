@@ -1,9 +1,12 @@
 [{
+    "text": "Filmes"
+},
+{
     "text": "Quadrinhos"
 },
- {
-     "text": "Filmes"
- },
- {
-     "text": "Series"
- }]
+{
+    "text": "Series"
+},
+{
+    "text": "QUIZ"
+}]

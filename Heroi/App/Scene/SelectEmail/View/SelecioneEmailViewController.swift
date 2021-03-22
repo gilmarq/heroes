@@ -24,7 +24,6 @@ class SelecioneEmailViewController: UIViewController {
         super.viewWillAppear(animated)
         table.register(SelectTableViewCell.self)
         select.loadJson()
-        
     }
     
     init() {

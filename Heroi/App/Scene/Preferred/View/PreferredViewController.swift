@@ -15,12 +15,13 @@ class PreferredViewController: UIViewController {
     @IBOutlet weak var subTitle: UILabel!
     @IBOutlet weak var oneTile: UILabel!
     @IBOutlet weak var TableView: UITableView!
+    var value = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         TableView.register(PreferredTableViewCell.self)
         preferredViewModel.formtJson()
-
+        subTitle.text =  value
     }
 }
 
@@ -28,16 +29,20 @@ class PreferredViewController: UIViewController {
 extension PreferredViewController : UITableViewDelegate {
     
     func tableView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-      // return 10
         return preferredViewModel.preferre.count
     }
 }
     
 //MARK:- UICollectionViewDataSource
-
 extension PreferredViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return preferredViewModel.preferre.count
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+         let controller = ShowHeroViewController()
+        self.navigationController?.pushViewController(controller, animated:true)
+
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
