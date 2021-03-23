@@ -16,6 +16,8 @@ class ShowHeroViewController: UIViewController {
     @IBOutlet weak var cardComic: UIView!
     @IBOutlet weak var titleHero: UILabel!
     @IBOutlet weak var quizAnswer: UILabel!
+    var totalCorrectAnswer: Int = 0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,11 +25,11 @@ class ShowHeroViewController: UIViewController {
     }
 
     @IBAction func action(_ sender: Any) {
-        let controller = PreLoginViewController()
-        self.navigationController?.pushViewController(controller, animated:true)
+        dismiss(animated: true, completion: nil)
     }
     
     func setupView() {
+        quizAnswer.text = String(totalCorrectAnswer)
         titleHero.tintColor = .red
         
         cardQuiz.layer.masksToBounds = true

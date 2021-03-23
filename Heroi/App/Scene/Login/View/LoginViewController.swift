@@ -11,6 +11,7 @@ import UIKit
 class LoginViewController: UIViewController {
     
     // MARK: - outlet
+    
     @IBOutlet weak var msgError: UILabel!
     @IBOutlet private weak var passWord: UITextField! {
         didSet{
@@ -49,6 +50,12 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func actionButton(_ sender: Any) {
-        self.navigationController?.pushViewController(HomeViewController(), animated: true)
+        let coordinator =  HomeCoordinator(navigationController: navigationController!)
+        coordinator.start()
+        
+        
+
+        
+        //self.navigationController?.pushViewController(HomeViewController(), animated: true)
     }
 }

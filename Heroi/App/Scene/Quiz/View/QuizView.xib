@@ -10,12 +10,15 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QuizViewController" customModule="Heroi" customModuleProvider="target">
             <connections>
-                <outlet property="answers" destination="b2W-1z-w52" id="alK-Nr-UJY"/>
                 <outlet property="question" destination="yzi-lm-tSm" id="9dk-8w-h5O"/>
                 <outlet property="questionView" destination="o2Y-tq-J7o" id="VHu-yx-pMH"/>
                 <outlet property="sibTitle" destination="9hc-CL-1wN" id="32l-rp-rDf"/>
                 <outlet property="timeView" destination="Qdv-CX-ckn" id="Yo1-fa-gpb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="answers" destination="1Ma-iv-d3A" collectionClass="NSMutableArray" id="7rT-Or-Cby"/>
+                <outletCollection property="answers" destination="qBt-rt-SD6" collectionClass="NSMutableArray" id="TbJ-GB-2lA"/>
+                <outletCollection property="answers" destination="eSg-0k-uiB" collectionClass="NSMutableArray" id="YCW-a2-I7Z"/>
+                <outletCollection property="answers" destination="b2W-1z-w52" collectionClass="NSMutableArray" id="dRp-q4-CQA"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -150,10 +153,10 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o2Y-tq-J7o">
                     <rect key="frame" x="16" y="92.5" width="288" height="329.5"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Perguntas  " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzi-lm-tSm">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Perguntas  " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzi-lm-tSm">
                             <rect key="frame" x="2" y="2" width="284" height="325.5"/>
                             <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                             <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <color key="highlightedColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </label>

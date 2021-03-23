@@ -50,11 +50,14 @@ extension HomeViewController: UICollectionViewDelegate{
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let controller = SelectViewController()
+       
+        
+        let coordinator = SelectCoordinator(navigationController: navigationController!)
         let cell: HomeCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
         cell.setup(with: homeViewModel.universe[indexPath.row])
-        controller.value =  cell.veue
-        self.navigationController?.pushViewController(controller, animated: false)
+        coordinator.value = cell.veue
+        coordinator.start()
+
     }
 }
 

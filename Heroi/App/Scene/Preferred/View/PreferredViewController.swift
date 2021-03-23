@@ -10,6 +10,7 @@ import UIKit
 
 class PreferredViewController: UIViewController {
     var preferredViewModel =  PreferredViewModel()
+    let preferredCoordinator =  PreferredCoordinator.self
     
     @IBOutlet weak var cardTitle: UILabel!
     @IBOutlet weak var subTitle: UILabel!
@@ -21,7 +22,7 @@ class PreferredViewController: UIViewController {
         super.viewDidLoad()
         TableView.register(PreferredTableViewCell.self)
         preferredViewModel.formtJson()
-        subTitle.text =  value
+       // subTitle.text = preferredCoordinator.
     }
 }
 
@@ -40,9 +41,8 @@ extension PreferredViewController: UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
-         let controller = ShowHeroViewController()
-        self.navigationController?.pushViewController(controller, animated:true)
-
+        let coordinator = ShowHeroCoordinator(navigationController:navigationController!)
+        coordinator.start()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

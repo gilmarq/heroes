@@ -16,12 +16,14 @@ class SelectViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!    
     @IBOutlet weak var heroesImage: UIImageView!
     
+    var selectCoordinator = SelectCoordinator.self
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.register(SelectCell.self)
         viewModel.formtJson()
         navigationController?.setNavigationBarHidden(false, animated: true)
-        self.heroesImage.image = UIImage(named: value)
+        //self.heroesImage.image = UIImage(named: value )
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -30,7 +32,6 @@ class SelectViewController: UIViewController {
     
     //MARK: -INIT
     init( ) {
- 
         super.init(nibName: "SelectView", bundle : nil)
     }
     

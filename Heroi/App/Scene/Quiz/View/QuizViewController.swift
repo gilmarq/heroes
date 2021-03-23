@@ -9,13 +9,14 @@
 import UIKit
 
 class QuizViewController: UIViewController {
-
+    
     @IBOutlet weak var questionView: UIView!
-    @IBOutlet weak var answers: UIButton!
+    @IBOutlet var answers: [UIButton]!
     @IBOutlet weak var question: UILabel!
     @IBOutlet weak var timeView: UIView!
-    
     @IBOutlet weak var sibTitle: UILabel!
+    
+    let quizViewModel =  QuizViewModel()
     init() {
         super.init(nibName: "QuizView", bundle : nil)
     }
@@ -26,7 +27,20 @@ class QuizViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-      setup()
+        //setupTimeView()
+               getQuiz()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setup()
+       UIView.animate(withDuration: 10.0, delay: 0, options: .curveLinear, animations: {
+                  self.timeView.frame.size.width = 0
+              }) { (success) in
+                  self.showHeroes()
+              }
+              getQuiz()
+        
     }
     
     func setup() {
@@ -34,7 +48,47 @@ class QuizViewController: UIViewController {
         questionView.layer.cornerRadius = 5
     }
     
-
-    @IBAction func selectAnswer(_ sender: UIButton) {
+    func setupTimeView() {
+        timeView.frame.size.width = view.frame.size.width
+        UIView.animate(withDuration: 1.0, delay: 0, options: .curveLinear, animations: {
+            self.timeView.frame.size.width = 0
+        }) { (success) in
+            self.showHeroes()
+        }
     }
+    
+    func showHeroes() {
+        let  controller = ShowHeroViewController()
+        controller.totalCorrectAnswer = quizViewModel.totalCorrecteAnswer
+        self.navigationController?.pushViewController(controller, animated: true) 
+    }
+    
+    func getQuiz() {
+        quizViewModel.refreshQuiz()
+        question.text = quizViewModel.questions
+        for i in 0..<quizViewModel.options.count {
+            let option  = quizViewModel.options[i]
+            let button = answers[i]
+            button.setTitle(option, for: .normal)
+        }
+    }
+    
+    func setupTitle() {
+        
+    }
+    
+    func newQuiz() {
+        
+    }
+    
+    @IBAction func selectAnswer(_ sender: UIButton) {
+        guard let  index = answers.firstIndex(of: sender) else {return}
+        quizViewModel.validateAnswer(index: index)
+        newQuiz()
+        
+    }
+    
+    
+    
 }
+

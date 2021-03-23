@@ -12,13 +12,12 @@ class QuizModel {
     
     let question: String
     let options: [String]
+    private let correctAnswer: String?
     
-    private let correcteAnswer: String
-    
-    init(question: String, options:[String],correcteAnswer:String ) {
+    init(question: String, options:[String], correctAnswer:String ) {
         self.question = question
         self.options = options
-        self.correcteAnswer = correcteAnswer
+        self.correctAnswer = correctAnswer
     }
     
     deinit {
@@ -27,7 +26,7 @@ class QuizModel {
     
     func vaidadOption(_ index: Int) -> Bool{
         let answer = options[index]
-        return answer == correcteAnswer
+        return answer == correctAnswer
     }
     
     

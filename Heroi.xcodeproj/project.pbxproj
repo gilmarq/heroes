@@ -10,6 +10,14 @@
 		4DF9441C9A4AFD0637A4C7B1 /* Pods_HeroiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC24822D4DE4A510DE79064 /* Pods_HeroiTests.framework */; };
 		7C042005260820E500091C9B /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C042004260820E500091C9B /* QuizViewController.swift */; };
 		7C0420092608354F00091C9B /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0420082608354F00091C9B /* QuizModel.swift */; };
+		7C04200D2609819200091C9B /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C04200C2609819200091C9B /* HomeCoordinator.swift */; };
+		7C04201226098F6200091C9B /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C04201126098F6200091C9B /* AppCoordinator.swift */; };
+		7C0420142609990400091C9B /* PreloginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0420132609990400091C9B /* PreloginCoordinator.swift */; };
+		7C0420182609A00A00091C9B /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0420172609A00A00091C9B /* Coordinator.swift */; };
+		7C04201C2609A9CF00091C9B /* SelectEmailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C04201B2609A9CF00091C9B /* SelectEmailCoordinator.swift */; };
+		7C04201F2609AAF400091C9B /* PreferredCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C04201E2609AAF400091C9B /* PreferredCoordinator.swift */; };
+		7C0420222609ABA400091C9B /* ShowHeroCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0420212609ABA400091C9B /* ShowHeroCoordinator.swift */; };
+		7C0420262609AC9D00091C9B /* SelectCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0420252609AC9D00091C9B /* SelectCoordinator.swift */; };
 		7C0CCAFE26081D2C0013F4F1 /* QuizViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0CCAFD26081D2C0013F4F1 /* QuizViewModel.swift */; };
 		7CEDBF3A25F45EC900EA76F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEDBF3925F45EC900EA76F5 /* AppDelegate.swift */; };
 		7CEDBF4625F45ECA00EA76F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CEDBF4425F45ECA00EA76F5 /* LaunchScreen.storyboard */; };
@@ -33,7 +41,6 @@
 		7CEDBF9A25F4613C00EA76F5 /* PreLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CEDBF9825F4613C00EA76F5 /* PreLoginView.xib */; };
 		7CEDBF9B25F4613C00EA76F5 /* PreLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEDBF9925F4613C00EA76F5 /* PreLoginViewController.swift */; };
 		7CEDBFA625F956DB00EA76F5 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEDBFA525F956DB00EA76F5 /* CustomButton.swift */; };
-		7CEDBFA925F9B68A00EA76F5 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEDBFA825F9B68A00EA76F5 /* APIService.swift */; };
 		7CEDBFAB25FB17A000EA76F5 /* HomeMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 7CEDBFAA25FB17A000EA76F5 /* HomeMock.json */; };
 		7CEDBFB025FB185C00EA76F5 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEDBFAF25FB185C00EA76F5 /* HomeModel.swift */; };
 		7CEDBFB225FB190200EA76F5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEDBFB125FB190200EA76F5 /* HomeViewModel.swift */; };
@@ -63,7 +70,6 @@
 		7CFB5CD626030AF500FB2B5B /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CFB5CD426030AF500FB2B5B /* LoginView.xib */; };
 		7CFB5CD726030AF500FB2B5B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFB5CD526030AF500FB2B5B /* LoginViewController.swift */; };
 		7CFB5CD926030CB400FB2B5B /* PreloginTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFB5CD826030CB400FB2B5B /* PreloginTest.swift */; };
-		7CFB5CDD2604613B00FB2B5B /* Corfinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFB5CDC2604613B00FB2B5B /* Corfinator.swift */; };
 		B07E15853F6023A083B04C89 /* Pods_Heroi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBFD0527C24D006DF782ABF0 /* Pods_Heroi.framework */; };
 		C55899530B09D6AEE86B6567 /* Pods_Heroi_HeroiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA8C6276452EB407F07E23A /* Pods_Heroi_HeroiUITests.framework */; };
 /* End PBXBuildFile section */
@@ -91,6 +97,14 @@
 		704A78D79A5DEB3C32EDE659 /* Pods-HeroiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroiTests.release.xcconfig"; path = "Target Support Files/Pods-HeroiTests/Pods-HeroiTests.release.xcconfig"; sourceTree = "<group>"; };
 		7C042004260820E500091C9B /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		7C0420082608354F00091C9B /* QuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
+		7C04200C2609819200091C9B /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		7C04201126098F6200091C9B /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		7C0420132609990400091C9B /* PreloginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloginCoordinator.swift; sourceTree = "<group>"; };
+		7C0420172609A00A00091C9B /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		7C04201B2609A9CF00091C9B /* SelectEmailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectEmailCoordinator.swift; sourceTree = "<group>"; };
+		7C04201E2609AAF400091C9B /* PreferredCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferredCoordinator.swift; sourceTree = "<group>"; };
+		7C0420212609ABA400091C9B /* ShowHeroCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowHeroCoordinator.swift; sourceTree = "<group>"; };
+		7C0420252609AC9D00091C9B /* SelectCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCoordinator.swift; sourceTree = "<group>"; };
 		7C0CCAFD26081D2C0013F4F1 /* QuizViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewModel.swift; sourceTree = "<group>"; };
 		7CEDBF3625F45EC900EA76F5 /* Heroi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Heroi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CEDBF3925F45EC900EA76F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -120,7 +134,6 @@
 		7CEDBF9825F4613C00EA76F5 /* PreLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreLoginView.xib; sourceTree = "<group>"; };
 		7CEDBF9925F4613C00EA76F5 /* PreLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreLoginViewController.swift; sourceTree = "<group>"; };
 		7CEDBFA525F956DB00EA76F5 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
-		7CEDBFA825F9B68A00EA76F5 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		7CEDBFAA25FB17A000EA76F5 /* HomeMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HomeMock.json; sourceTree = "<group>"; };
 		7CEDBFAF25FB185C00EA76F5 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		7CEDBFB125FB190200EA76F5 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -150,7 +163,6 @@
 		7CFB5CD426030AF500FB2B5B /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		7CFB5CD526030AF500FB2B5B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7CFB5CD826030CB400FB2B5B /* PreloginTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloginTest.swift; sourceTree = "<group>"; };
-		7CFB5CDC2604613B00FB2B5B /* Corfinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Corfinator.swift; sourceTree = "<group>"; };
 		86BC0F0628B35F17CCE9DAA5 /* Pods-Heroi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heroi.debug.xcconfig"; path = "Target Support Files/Pods-Heroi/Pods-Heroi.debug.xcconfig"; sourceTree = "<group>"; };
 		B4B7064B055028A9B25E432B /* Pods-Heroi-HeroiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heroi-HeroiUITests.release.xcconfig"; path = "Target Support Files/Pods-Heroi-HeroiUITests/Pods-Heroi-HeroiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CCA8C6276452EB407F07E23A /* Pods_Heroi_HeroiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Heroi_HeroiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -226,6 +238,55 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		7C04201026098F4900091C9B /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				7C04201126098F6200091C9B /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		7C04201526099CFE00091C9B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7CEDBF9825F4613C00EA76F5 /* PreLoginView.xib */,
+				7CEDBF9925F4613C00EA76F5 /* PreLoginViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7C04201626099D0A00091C9B /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				7C0420132609990400091C9B /* PreloginCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		7C04201D2609AAB000091C9B /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				7C04201E2609AAF400091C9B /* PreferredCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		7C0420202609AB8C00091C9B /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				7C0420212609ABA400091C9B /* ShowHeroCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		7C0420232609AC7500091C9B /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				7C0420252609AC9D00091C9B /* SelectCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		7CEDBF2D25F45EC900EA76F5 = {
 			isa = PBXGroup;
 			children = (
@@ -293,7 +354,6 @@
 			isa = PBXGroup;
 			children = (
 				7CEDBF6C25F45F5D00EA76F5 /* Scene */,
-				7CFB5CDB2604610D00FB2B5B /* Cordinator */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -328,8 +388,8 @@
 		7CEDBF6D25F45F8200EA76F5 /* PreLogin */ = {
 			isa = PBXGroup;
 			children = (
-				7CEDBF9825F4613C00EA76F5 /* PreLoginView.xib */,
-				7CEDBF9925F4613C00EA76F5 /* PreLoginViewController.swift */,
+				7C04201526099CFE00091C9B /* View */,
+				7C04201626099D0A00091C9B /* Coordinator */,
 			);
 			path = PreLogin;
 			sourceTree = "<group>";
@@ -337,6 +397,7 @@
 		7CEDBF6E25F45F9800EA76F5 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				7C04200C2609819200091C9B /* HomeCoordinator.swift */,
 				7CEDBF9C25F462FE00EA76F5 /* HomeCell */,
 				7CEDBFAD25FB183300EA76F5 /* Model */,
 				7CEDBFAC25FB181200EA76F5 /* View */,
@@ -357,7 +418,7 @@
 		7CEDBF7025F45FB300EA76F5 /* SelectEmail */ = {
 			isa = PBXGroup;
 			children = (
-				7CEDBFA725F9B66700EA76F5 /* Service */,
+				7CEDBFA725F9B66700EA76F5 /* Coordinator */,
 				7CEDBFA125F4747200EA76F5 /* Model */,
 				7CEDBFA325F4749B00EA76F5 /* View */,
 				7CEDBFA425F474AF00EA76F5 /* ViewModel */,
@@ -377,10 +438,12 @@
 		7CEDBF7225F45FF200EA76F5 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				7C04201026098F4900091C9B /* Coordinator */,
 				7CEDBF7325F45FFB00EA76F5 /* Extension */,
 				7CEDBF7525F460B500EA76F5 /* ProtocoloNib.swift */,
 				7CEDBFA525F956DB00EA76F5 /* CustomButton.swift */,
 				7CEDBF7425F460B500EA76F5 /* ProtocoloReusableView.swift */,
+				7C0420172609A00A00091C9B /* Coordinator.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -439,12 +502,12 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		7CEDBFA725F9B66700EA76F5 /* Service */ = {
+		7CEDBFA725F9B66700EA76F5 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				7CEDBFA825F9B68A00EA76F5 /* APIService.swift */,
+				7C04201B2609A9CF00091C9B /* SelectEmailCoordinator.swift */,
 			);
-			path = Service;
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		7CEDBFAC25FB181200EA76F5 /* View */ = {
@@ -484,6 +547,7 @@
 		7CEDBFBC25FC5F7200EA76F5 /* Select */ = {
 			isa = PBXGroup;
 			children = (
+				7C0420232609AC7500091C9B /* Coordinator */,
 				7CEDBFBF25FC613500EA76F5 /* SelectCell */,
 				7CEDBFBB25FC5F6900EA76F5 /* View */,
 				7CEDBFBD25FC60FB00EA76F5 /* ViewModel */,
@@ -521,6 +585,7 @@
 			isa = PBXGroup;
 			children = (
 				7CFB5CA525FD5D8000FB2B5B /* Model */,
+				7C04201D2609AAB000091C9B /* Coordinator */,
 				7CFB5CAB25FDCAE500FB2B5B /* Cell */,
 				7CFB5CA325FD5D5B00FB2B5B /* View */,
 				7CFB5CA425FD5D6C00FB2B5B /* ViewModel */,
@@ -556,6 +621,7 @@
 		7CFB5CAA25FDC3B300FB2B5B /* ShowHero */ = {
 			isa = PBXGroup;
 			children = (
+				7C0420202609AB8C00091C9B /* Coordinator */,
 				7CFB5CB025FDCC4D00FB2B5B /* View */,
 				7CFB5CB125FDCC5A00FB2B5B /* ViewModel */,
 				7CFB5CB225FDCC7200FB2B5B /* Model */,
@@ -630,14 +696,6 @@
 				7CFB5CD226030A0400FB2B5B /* LoginViewMode.swift */,
 			);
 			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		7CFB5CDB2604610D00FB2B5B /* Cordinator */ = {
-			isa = PBXGroup;
-			children = (
-				7CFB5CDC2604613B00FB2B5B /* Corfinator.swift */,
-			);
-			path = Cordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -896,19 +954,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CEDBFC625FC61A200EA76F5 /* SelectViewController.swift in Sources */,
+				7C04201C2609A9CF00091C9B /* SelectEmailCoordinator.swift in Sources */,
 				7CEDBFB225FB190200EA76F5 /* HomeViewModel.swift in Sources */,
-				7CFB5CDD2604613B00FB2B5B /* Corfinator.swift in Sources */,
 				7CFB5CBE260047DF00FB2B5B /* PreferredViewModel.swift in Sources */,
 				7CEDBFCA25FC6A1200EA76F5 /* SelectCell.swift in Sources */,
-				7CEDBFA925F9B68A00EA76F5 /* APIService.swift in Sources */,
 				7CEDBFBA25FB2BC700EA76F5 /* HomeViewController.swift in Sources */,
+				7C0420262609AC9D00091C9B /* SelectCoordinator.swift in Sources */,
 				7C0CCAFE26081D2C0013F4F1 /* QuizViewModel.swift in Sources */,
 				7CEDBFB025FB185C00EA76F5 /* HomeModel.swift in Sources */,
 				7CEDBF7C25F460C100EA76F5 /* UITableViewCell+Extrension.swift in Sources */,
+				7C0420142609990400091C9B /* PreloginCoordinator.swift in Sources */,
 				7CFB5CBC260047A300FB2B5B /* PreferredModal.swift in Sources */,
 				7CFB5CAE25FDCB1000FB2B5B /* PreferredTableViewCell.swift in Sources */,
+				7C04200D2609819200091C9B /* HomeCoordinator.swift in Sources */,
 				7CEDBF3A25F45EC900EA76F5 /* AppDelegate.swift in Sources */,
 				7CFB5CCF2602EDF000FB2B5B /* ShowHeroModel.swift in Sources */,
+				7C0420222609ABA400091C9B /* ShowHeroCoordinator.swift in Sources */,
+				7C0420182609A00A00091C9B /* Coordinator.swift in Sources */,
 				7CFB5CD726030AF500FB2B5B /* LoginViewController.swift in Sources */,
 				7CFB5CC226004F3300FB2B5B /* SelectModel.swift in Sources */,
 				7CEDBF7F25F460C100EA76F5 /* UICollectionViewCell+Extension.swift in Sources */,
@@ -919,7 +981,9 @@
 				7CEDBF9225F4612500EA76F5 /* SelecioneEmailViewController.swift in Sources */,
 				7CFB5CCC2602E5A200FB2B5B /* ShowHeroViewController.swift in Sources */,
 				7CEDBF7625F460B500EA76F5 /* ProtocoloReusableView.swift in Sources */,
+				7C04201226098F6200091C9B /* AppCoordinator.swift in Sources */,
 				7CEDBF9325F4612500EA76F5 /* EmailModel.swift in Sources */,
+				7C04201F2609AAF400091C9B /* PreferredCoordinator.swift in Sources */,
 				7CEDBF7E25F460C100EA76F5 /* UITextField+Extension.swift in Sources */,
 				7CEDBF9425F4612500EA76F5 /* SelectEmailViewModel.swift in Sources */,
 				7CEDBF7D25F460C100EA76F5 /* Decodable+Extension.swift in Sources */,
