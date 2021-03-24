@@ -25,6 +25,7 @@ class SelectCoordinator {
     // MARK: - Coordinator functions
     func start() {
         self.viewController = SelectViewController()
+        self.viewController.value = value
         self.navigationController.pushViewController(self.viewController, animated: false)
     }
 }

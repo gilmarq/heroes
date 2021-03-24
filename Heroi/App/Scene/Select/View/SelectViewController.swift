@@ -8,26 +8,33 @@
 
 import UIKit
 
+enum comics: String {
+    case Marvel = "Marvel"
+    case DC = "DC"
+    case StarWars = "StarWars"
+    case disney = "disney"
+}
+
 class SelectViewController: UIViewController {
     
+    var selectCoordinator = SelectCoordinator.self
     var viewModel = SelectViewModel()
     var value = ""
     
     @IBOutlet weak var collectionView: UICollectionView!    
     @IBOutlet weak var heroesImage: UIImageView!
     
-    var selectCoordinator = SelectCoordinator.self
-    
+    //MARK: - Life cyclo
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.register(SelectCell.self)
         viewModel.formtJson()
-        navigationController?.setNavigationBarHidden(false, animated: true)
-        //self.heroesImage.image = UIImage(named: value )
+        heroesImage.image = UIImage(named : value )
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        navigationController?.setNavigationBarHidden(false, animated: animated)
+    override func viewWillAppear(_ animated: Bool) {
+        setupNav()
+
     }
     
     //MARK: -INIT
@@ -37,6 +44,34 @@ class SelectViewController: UIViewController {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func setupNav() {
+        switch value {
+            case comics.Marvel.rawValue:
+                navigationController?.navigationBar.barTintColor = UIColor.red
+                navigationController?.navigationBar.tintColor = UIColor.white
+                setupNavBarBack()
+            case comics.DC.rawValue:
+                navigationController?.navigationBar.barTintColor = UIColor.blue
+                navigationController?.navigationBar.tintColor = UIColor.white
+                setupNavBarBack()
+            case comics.StarWars.rawValue:
+                navigationController?.navigationBar.barTintColor = UIColor.white
+                navigationController?.navigationBar.tintColor = UIColor.black
+                setupNavBarBack()
+            case comics.disney.rawValue:
+                navigationController?.navigationBar.barTintColor = UIColor.black
+                navigationController?.navigationBar.tintColor = UIColor.yellow
+                setupNavBarBack()
+            
+            default: break
+            
+        }
+    }
+    func setupNavBarBack(){
+        self.navigationController?.isNavigationBarHidden = false
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: " ", style: UIBarButtonItem.Style.plain, target: nil, action: nil)
     }
 }
 
@@ -62,8 +97,8 @@ extension SelectViewController: UICollectionViewDataSource {
         let cell: SelectCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
         cell.setup(with: viewModel.select[indexPath.row])
         controller.value = cell.value
-       
+        
         return cell
     }
-
+    
 }

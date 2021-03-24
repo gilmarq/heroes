@@ -22,7 +22,14 @@ class PreferredViewController: UIViewController {
         super.viewDidLoad()
         TableView.register(PreferredTableViewCell.self)
         preferredViewModel.formtJson()
-       // subTitle.text = preferredCoordinator.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        setupNavBarBack()
+    }
+    
+    func setupNavBarBack(){
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: " ", style: UIBarButtonItem.Style.plain, target: nil, action: nil)
     }
 }
 
@@ -33,14 +40,14 @@ extension PreferredViewController : UITableViewDelegate {
         return preferredViewModel.preferre.count
     }
 }
-    
+
 //MARK:- UICollectionViewDataSource
 extension PreferredViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return preferredViewModel.preferre.count
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
+        
         let coordinator = ShowHeroCoordinator(navigationController:navigationController!)
         coordinator.start()
     }

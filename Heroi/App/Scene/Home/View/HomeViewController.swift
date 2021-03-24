@@ -13,18 +13,18 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     var universe: [HomeModel] = []
     var homeViewModel = HomeViewModel()
+    var imagemStrig = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.register(HomeCell.self)
         homeViewModel.formtJson()
-        
+        setupNav()
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
-        navigationController?.setNavigationBarHidden(true, animated: animated)
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.isNavigationBarHidden = true
     }
-    
     
     init() {
         super.init(nibName: "HomeView", bundle : nil)
@@ -33,6 +33,10 @@ class HomeViewController: UIViewController {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func setupNav(){
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: " ", style: UIBarButtonItem.Style.plain, target: nil, action: nil)
     }
 }
 
@@ -50,14 +54,14 @@ extension HomeViewController: UICollectionViewDelegate{
     
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-       
+        
         
         let coordinator = SelectCoordinator(navigationController: navigationController!)
         let cell: HomeCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
         cell.setup(with: homeViewModel.universe[indexPath.row])
         coordinator.value = cell.veue
         coordinator.start()
-
+        
     }
 }
 
@@ -84,3 +88,4 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
     }
     
 }
+

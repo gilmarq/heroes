@@ -241,6 +241,7 @@
 		7C04201026098F4900091C9B /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				7C0420172609A00A00091C9B /* Coordinator.swift */,
 				7C04201126098F6200091C9B /* AppCoordinator.swift */,
 			);
 			path = Coordinator;
@@ -443,7 +444,6 @@
 				7CEDBF7525F460B500EA76F5 /* ProtocoloNib.swift */,
 				7CEDBFA525F956DB00EA76F5 /* CustomButton.swift */,
 				7CEDBF7425F460B500EA76F5 /* ProtocoloReusableView.swift */,
-				7C0420172609A00A00091C9B /* Coordinator.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";

@@ -45,3 +45,4 @@ class SelectCell: UICollectionViewCell,NibLoadableView ,ReusableView  {
     }
     
 }
+

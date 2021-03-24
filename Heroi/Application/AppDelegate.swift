@@ -13,14 +13,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     lazy var window: UIWindow? = UIWindow(frame: UIScreen.main.bounds)
     var appCoordinator: AppCoordinator!
+    let navController = UINavigationController()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        //        let controller =  QuizViewController()
-        //        window?.rootViewController = UINavigationController(rootViewController: controller)
-        //        window?.makeKeyAndVisible()
+//        let backButton = UIBarButtonItem(title: "Custom", style: .plain, target: self, action: nil    )
+//        backButton.setBackgroundImage(UIImage(named: "imageName"), for: .normal, barMetrics: .default)
+//        // Stretches image
+//          navigationItem.setLeftBarButtonItem(backButton, animated: false)
         
-        let navController = UINavigationController()
+         navController.navigationBar.backItem?.title = " "
+
+       
+
+        
+  
         window?.rootViewController = navController
         
         self.appCoordinator = AppCoordinator(navigationController: navController)

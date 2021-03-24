@@ -27,20 +27,25 @@ class QuizViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //setupTimeView()
-               getQuiz()
+        getQuiz()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setup()
-       UIView.animate(withDuration: 10.0, delay: 0, options: .curveLinear, animations: {
-                  self.timeView.frame.size.width = 0
-              }) { (success) in
-                  self.showHeroes()
-              }
-              getQuiz()
         
+         UIView.animate(withDuration: 20.0, delay: 0, options: .curveLinear, animations: {
+            self.timeView.frame.size.width = 0
+        }) { (success) in
+            self.showHeroes()
+        }
+        getQuiz()
+        setupNavBarBack()
+    }
+    
+    func setupNavBarBack(){
+        self.navigationController?.isNavigationBarHidden = false
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: " ", style: UIBarButtonItem.Style.plain, target: nil, action: nil)
     }
     
     func setup() {
