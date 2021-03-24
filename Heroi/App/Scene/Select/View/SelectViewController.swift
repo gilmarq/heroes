@@ -8,11 +8,20 @@
 
 import UIKit
 
+//MARK: - enum
 enum comics: String {
     case Marvel = "Marvel"
     case DC = "DC"
     case StarWars = "StarWars"
     case disney = "disney"
+}
+
+enum items: String {
+    case comic = "Quadrinhos"
+    case filmes =  "Filmes"
+    case series = "Series"
+    case quiz = "QUIZ"
+    
 }
 
 class SelectViewController: UIViewController {
@@ -34,7 +43,6 @@ class SelectViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         setupNav()
-
     }
     
     //MARK: -INIT
@@ -64,12 +72,11 @@ class SelectViewController: UIViewController {
                 navigationController?.navigationBar.barTintColor = UIColor.black
                 navigationController?.navigationBar.tintColor = UIColor.yellow
                 setupNavBarBack()
-            
             default: break
-            
         }
     }
-    func setupNavBarBack(){
+    
+    func setupNavBarBack() {
         self.navigationController?.isNavigationBarHidden = false
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: " ", style: UIBarButtonItem.Style.plain, target: nil, action: nil)
     }
@@ -78,13 +85,29 @@ class SelectViewController: UIViewController {
 //MARK: - UICollectionViewDelegate
 extension SelectViewController: UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
+         
         return viewModel.select.count
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let controller = PreferredViewController()
-        self.navigationController?.pushViewController(controller, animated: true)
+        let item = viewModel.select[indexPath.row]
+        
+            switch item.text {
+                case items.filmes.rawValue:
+                let coordinator = PreferredCoordinator(navigationController:navigationController!)
+                coordinator.start()
+                case items.comic.rawValue:
+                let coordinator = PreferredCoordinator(navigationController:navigationController!)
+                coordinator.start()
+                case items.series.rawValue:
+                let coordinator = PreferredCoordinator(navigationController:navigationController!)
+                coordinator.start()
+                case items.quiz.rawValue:
+                let coordinator = QuizCoordinator(navigationController:navigationController!)
+                coordinator.start()
+                default:  break
+            }
+    
     }
 }
 
@@ -92,7 +115,6 @@ extension SelectViewController: UICollectionViewDelegate{
 extension SelectViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
         let controller = PreferredViewController()
         let cell: SelectCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
         cell.setup(with: viewModel.select[indexPath.row])

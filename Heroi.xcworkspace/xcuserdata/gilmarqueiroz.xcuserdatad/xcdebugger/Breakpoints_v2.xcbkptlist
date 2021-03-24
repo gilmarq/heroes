@@ -71,38 +71,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "38FA8102-CF89-4590-B123-F9E3FB76F716"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Heroi/App/Scene/Quiz/ViewModel/QuizViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "questions"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "67C5ED41-57C4-438F-9AA3-91711A57E63D"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Heroi/App/Scene/Quiz/View/QuizViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
-            landmarkName = "getQuiz()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "EAB0CB02-75D8-46E2-8FB0-BBBDA68C9BC0"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -119,158 +87,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4BD35CD4-8D03-4496-9F37-301A2742481D"
+            uuid = "4563BFE8-77E3-4C63-BFE9-A4DE79096CAB"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Heroi/App/Scene/Select/View/SelectViewController.swift"
+            filePath = "Heroi/App/Scene/Preferred/View/PreferredViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
-            landmarkName = "setupNav()"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "tableView(_:numberOfItemsInSection:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "4BD35CD4-8D03-4496-9F37-301A2742481D - 135fe1b0df86c092"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Heroi.SelectViewController.setupNav() -&gt; ()"
-                  moduleName = "Heroi"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gilmarqueiroz/Desktop/Heroi/Heroi/App/Scene/Select/View/SelectViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "55">
-               </Location>
-               <Location
-                  uuid = "4BD35CD4-8D03-4496-9F37-301A2742481D - 135fe1b0df86c092"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Heroi.SelectViewController.setupNav() -&gt; ()"
-                  moduleName = "Heroi"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gilmarqueiroz/Desktop/Heroi/Heroi/App/Scene/Select/View/SelectViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "74">
-               </Location>
-               <Location
-                  uuid = "4BD35CD4-8D03-4496-9F37-301A2742481D - 135fe1b0df86c092"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Heroi.SelectViewController.setupNav() -&gt; ()"
-                  moduleName = "Heroi"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gilmarqueiroz/Desktop/Heroi/Heroi/App/Scene/Select/View/SelectViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "827">
-               </Location>
-               <Location
-                  uuid = "4BD35CD4-8D03-4496-9F37-301A2742481D - 135fe1b0df86c092"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Heroi.SelectViewController.setupNav() -&gt; ()"
-                  moduleName = "Heroi"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gilmarqueiroz/Desktop/Heroi/Heroi/App/Scene/Select/View/SelectViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "1581">
-               </Location>
-               <Location
-                  uuid = "4BD35CD4-8D03-4496-9F37-301A2742481D - 135fe1b0df86c092"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Heroi.SelectViewController.setupNav() -&gt; ()"
-                  moduleName = "Heroi"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gilmarqueiroz/Desktop/Heroi/Heroi/App/Scene/Select/View/SelectViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "2335">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "29458DAD-4773-4331-AA21-D16D7F5D1EE0"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Heroi/App/Scene/Select/View/SelectViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
-            landmarkName = "setupNav()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "9A7D8308-E969-4831-8083-B32DB302FD07"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Heroi/App/Scene/Quiz/View/QuizViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "viewWillAppear(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "9A7D8308-E969-4831-8083-B32DB302FD07 - a5bc005410ad9a2d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Heroi.QuizViewController.viewWillAppear(Swift.Bool) -&gt; ()"
-                  moduleName = "Heroi"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gilmarqueiroz/Desktop/Heroi/Heroi/App/Scene/Quiz/View/QuizViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "37"
-                  endingLineNumber = "37"
-                  offsetFromSymbolStart = "200">
-               </Location>
-               <Location
-                  uuid = "9A7D8308-E969-4831-8083-B32DB302FD07 - 102973a0a7992a59"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in Heroi.QuizViewController.viewWillAppear(Swift.Bool) -&gt; ()"
-                  moduleName = "Heroi"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gilmarqueiroz/Desktop/Heroi/Heroi/App/Scene/Quiz/View/QuizViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "38"
-                  endingLineNumber = "38"
-                  offsetFromSymbolStart = "55">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

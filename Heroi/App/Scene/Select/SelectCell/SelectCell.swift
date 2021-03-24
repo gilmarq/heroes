@@ -32,7 +32,7 @@ class SelectCell: UICollectionViewCell,NibLoadableView ,ReusableView  {
         cardView.layer.borderWidth = 2
         cardView.layer.cornerRadius = 10
         
-        if self.textLabel.text == "QUIZ" {
+        if self.textLabel.text == "Quiz" {
             cardView.layer.masksToBounds = true
             cardView.layer.borderColor = UIColor.lightGray.cgColor
             cardView.layer.borderWidth = 2

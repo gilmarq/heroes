@@ -8,6 +8,8 @@
 
 import UIKit
 
+//MARK: - enum
+
 class PreferredViewController: UIViewController {
     var preferredViewModel =  PreferredViewModel()
     let preferredCoordinator =  PreferredCoordinator.self
@@ -48,14 +50,13 @@ extension PreferredViewController: UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        
         let coordinator = ShowHeroCoordinator(navigationController:navigationController!)
         coordinator.start()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell: PreferredTableViewCell = tableView.dequeueReusableCell(forIndexPath: indexPath)
-        print(preferredViewModel.preferre[indexPath.row])
         cell.setup(with: preferredViewModel.preferre[indexPath.row])
         return cell
     }
