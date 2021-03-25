@@ -27,18 +27,13 @@ class QuizViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        getQuiz()
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         setup()
-        
-         UIView.animate(withDuration: 20.0, delay: 0, options: .curveLinear, animations: {
-            self.timeView.frame.size.width = 0
-        }) { (success) in
-            self.showHeroes()
-        }
+        setupTimeView()
         getQuiz()
         setupNavBarBack()
     }
@@ -55,10 +50,10 @@ class QuizViewController: UIViewController {
     
     func setupTimeView() {
         timeView.frame.size.width = view.frame.size.width
-        UIView.animate(withDuration: 1.0, delay: 0, options: .curveLinear, animations: {
-            self.timeView.frame.size.width = 0
+        UIView.animate(withDuration: 20.0, delay: 1 , options: .curveLinear, animations: {
+           self.timeView.frame.size.width = 0
         }) { (success) in
-            self.showHeroes()
+           self.showHeroes()
         }
     }
     
@@ -81,17 +76,14 @@ class QuizViewController: UIViewController {
     func setupTitle() {
         
     }
-    
-    func newQuiz() {
         
-    }
-    
     @IBAction func selectAnswer(_ sender: UIButton) {
         guard let  index = answers.firstIndex(of: sender) else {return}
         quizViewModel.validateAnswer(index: index)
-        newQuiz()
+        getQuiz()
         
     }
+    
     
     
     

@@ -36,8 +36,8 @@
                         <action selector="action:" destination="-1" eventType="touchUpInside" id="yq6-Ji-lLV"/>
                     </connections>
                 </button>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ironMan" translatesAutoresizingMaskIntoConstraints="NO" id="jXJ-FR-Qae">
-                    <rect key="frame" x="0.0" y="44" width="414" height="375"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ironMan" translatesAutoresizingMaskIntoConstraints="NO" id="jXJ-FR-Qae">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="419"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iron Man " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPL-ge-9aB">
                     <rect key="frame" x="16" y="438" width="382" height="24"/>
@@ -137,11 +137,11 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5qX-dJ-3rH" secondAttribute="trailing" constant="16" id="Nkk-1f-cA3"/>
                 <constraint firstItem="BP6-rd-aKa" firstAttribute="top" relation="greaterThanOrEqual" secondItem="5qX-dJ-3rH" secondAttribute="bottom" priority="999" constant="10" id="No1-RJ-hoR"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Act-ip-SqC" secondAttribute="bottom" constant="16" id="OhF-GV-Zed"/>
+                <constraint firstItem="jXJ-FR-Qae" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="SG8-EC-a35"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Qy5-Ba-Ja0" secondAttribute="trailing" constant="16" id="SSn-La-nh4"/>
                 <constraint firstItem="TPL-ge-9aB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="VYV-iw-1te"/>
                 <constraint firstItem="BP6-rd-aKa" firstAttribute="top" secondItem="Qy5-Ba-Ja0" secondAttribute="bottom" constant="19" id="ZIS-4r-lPD"/>
                 <constraint firstItem="Qy5-Ba-Ja0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="bWo-S1-t7H"/>
-                <constraint firstItem="jXJ-FR-Qae" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="fFE-jX-Qy6"/>
                 <constraint firstItem="Qy5-Ba-Ja0" firstAttribute="top" secondItem="5qX-dJ-3rH" secondAttribute="bottom" constant="19" id="gn4-gf-HwV"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TPL-ge-9aB" secondAttribute="trailing" constant="16" id="h6C-8E-V4A"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Act-ip-SqC" secondAttribute="trailing" constant="16" id="lLp-Rs-jmp"/>
@@ -157,6 +157,6 @@
         </view>
     </objects>
     <resources>
-        <image name="ironMan" width="1366" height="768"/>
+        <image name="ironMan" width="264" height="175"/>
     </resources>
 </document>

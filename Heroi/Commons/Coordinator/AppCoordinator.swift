@@ -11,14 +11,14 @@ import UIKit
 final class AppCoordinator {
     
     private let navigationController: UINavigationController
-    private var childCoordinator: PreLoginCoordinator!
+    private var childCoordinator: QuizCoordinator!
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
     
     func start() {
-        let preLoginCoordinator = PreLoginCoordinator(
+        let preLoginCoordinator = QuizCoordinator(
             navigationController: self.navigationController
         )
         

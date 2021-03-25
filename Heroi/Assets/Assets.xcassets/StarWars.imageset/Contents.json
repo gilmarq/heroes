@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "StarWars.jpg",
+      "filename" : "StarWars.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "StarWars@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "StarWars@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

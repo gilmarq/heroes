@@ -20,7 +20,7 @@
                     <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IqK-Xx-WkM">
                         <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StarWars" translatesAutoresizingMaskIntoConstraints="NO" id="k9V-jV-Hn1">
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StarWars" translatesAutoresizingMaskIntoConstraints="NO" id="k9V-jV-Hn1">
                                 <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
                             </imageView>
                         </subviews>
@@ -53,6 +53,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="StarWars" width="618" height="350"/>
+        <image name="StarWars" width="264" height="238"/>
     </resources>
 </document>

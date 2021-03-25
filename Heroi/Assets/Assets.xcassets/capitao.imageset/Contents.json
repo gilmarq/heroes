@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Hulk.jpg",
+      "filename" : "capitao.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "capitao@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "capitao@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

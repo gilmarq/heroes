@@ -9,6 +9,7 @@
 import UIKit
 
 class CustomButton: UIButton {
+    
     var borderWidth: CGFloat = 1
     var borderColor = UIColor.black.cgColor
    
@@ -21,12 +22,9 @@ class CustomButton: UIButton {
     func setup() {
           self.clipsToBounds = true
           self.layer.cornerRadius = 10
-       
-    
       }
     
-  func applyGradient(colors: [CGColor])
-  {
+  func applyGradient(colors: [CGColor]) {
       let gradientLayer = CAGradientLayer()
       gradientLayer.colors = colors
       gradientLayer.startPoint = CGPoint(x: 0, y: 0)
@@ -34,5 +32,4 @@ class CustomButton: UIButton {
       gradientLayer.frame = self.bounds
       self.layer.insertSublayer(gradientLayer, at: 0)
   }
-
 }
