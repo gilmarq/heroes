@@ -19,8 +19,8 @@
 		7C0420222609ABA400091C9B /* ShowHeroCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0420212609ABA400091C9B /* ShowHeroCoordinator.swift */; };
 		7C0420262609AC9D00091C9B /* SelectCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0420252609AC9D00091C9B /* SelectCoordinator.swift */; };
 		7C04202A260AFBE000091C9B /* QuizCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C042029260AFBE000091C9B /* QuizCoordinator.swift */; };
-		7C04202E260BDC5A00091C9B /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C04202D260BDC5A00091C9B /* CustomView.swift */; };
-		7C042030260BFC1300091C9B /* CustomButtonRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C04202F260BFC1300091C9B /* CustomButtonRadius.swift */; };
+		7C042030260BFC1300091C9B /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C04202F260BFC1300091C9B /* CustomLabel.swift */; };
+		7C042032260D2B5E00091C9B /* CustomiViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C042031260D2B5E00091C9B /* CustomiViews.swift */; };
 		7C0CCAFE26081D2C0013F4F1 /* QuizViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0CCAFD26081D2C0013F4F1 /* QuizViewModel.swift */; };
 		7CEDBF3A25F45EC900EA76F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEDBF3925F45EC900EA76F5 /* AppDelegate.swift */; };
 		7CEDBF4625F45ECA00EA76F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CEDBF4425F45ECA00EA76F5 /* LaunchScreen.storyboard */; };
@@ -109,8 +109,8 @@
 		7C0420212609ABA400091C9B /* ShowHeroCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowHeroCoordinator.swift; sourceTree = "<group>"; };
 		7C0420252609AC9D00091C9B /* SelectCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCoordinator.swift; sourceTree = "<group>"; };
 		7C042029260AFBE000091C9B /* QuizCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCoordinator.swift; sourceTree = "<group>"; };
-		7C04202D260BDC5A00091C9B /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
-		7C04202F260BFC1300091C9B /* CustomButtonRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonRadius.swift; sourceTree = "<group>"; };
+		7C04202F260BFC1300091C9B /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		7C042031260D2B5E00091C9B /* CustomiViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomiViews.swift; sourceTree = "<group>"; };
 		7C0CCAFD26081D2C0013F4F1 /* QuizViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewModel.swift; sourceTree = "<group>"; };
 		7CEDBF3625F45EC900EA76F5 /* Heroi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Heroi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CEDBF3925F45EC900EA76F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -466,8 +466,8 @@
 				7CEDBF7525F460B500EA76F5 /* ProtocoloNib.swift */,
 				7CEDBFA525F956DB00EA76F5 /* CustomButton.swift */,
 				7CEDBF7425F460B500EA76F5 /* ProtocoloReusableView.swift */,
-				7C04202D260BDC5A00091C9B /* CustomView.swift */,
-				7C04202F260BFC1300091C9B /* CustomButtonRadius.swift */,
+				7C04202F260BFC1300091C9B /* CustomLabel.swift */,
+				7C042031260D2B5E00091C9B /* CustomiViews.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -981,7 +981,6 @@
 				7C04202A260AFBE000091C9B /* QuizCoordinator.swift in Sources */,
 				7CEDBFC625FC61A200EA76F5 /* SelectViewController.swift in Sources */,
 				7C04201C2609A9CF00091C9B /* SelectEmailCoordinator.swift in Sources */,
-				7C04202E260BDC5A00091C9B /* CustomView.swift in Sources */,
 				7CEDBFB225FB190200EA76F5 /* HomeViewModel.swift in Sources */,
 				7CFB5CBE260047DF00FB2B5B /* PreferredViewModel.swift in Sources */,
 				7CEDBFCA25FC6A1200EA76F5 /* SelectCell.swift in Sources */,
@@ -993,6 +992,7 @@
 				7C0420142609990400091C9B /* PreloginCoordinator.swift in Sources */,
 				7CFB5CBC260047A300FB2B5B /* PreferredModal.swift in Sources */,
 				7CFB5CAE25FDCB1000FB2B5B /* PreferredTableViewCell.swift in Sources */,
+				7C042032260D2B5E00091C9B /* CustomiViews.swift in Sources */,
 				7C04200D2609819200091C9B /* HomeCoordinator.swift in Sources */,
 				7CEDBF3A25F45EC900EA76F5 /* AppDelegate.swift in Sources */,
 				7CFB5CCF2602EDF000FB2B5B /* ShowHeroModel.swift in Sources */,
@@ -1002,7 +1002,7 @@
 				7CFB5CC226004F3300FB2B5B /* SelectModel.swift in Sources */,
 				7CEDBF7F25F460C100EA76F5 /* UICollectionViewCell+Extension.swift in Sources */,
 				7CEDBFA625F956DB00EA76F5 /* CustomButton.swift in Sources */,
-				7C042030260BFC1300091C9B /* CustomButtonRadius.swift in Sources */,
+				7C042030260BFC1300091C9B /* CustomLabel.swift in Sources */,
 				7C042005260820E500091C9B /* QuizViewController.swift in Sources */,
 				7CFB5CC026004F1F00FB2B5B /* SelectViewModel.swift in Sources */,
 				7C0420092608354F00091C9B /* QuizModel.swift in Sources */,

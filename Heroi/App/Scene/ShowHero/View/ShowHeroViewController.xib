@@ -49,7 +49,7 @@
                     <rect key="frame" x="16" y="472" width="382" height="82"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quadrinho " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0o7-of-tcf">
-                            <rect key="frame" x="16" y="0.0" width="350" height="21"/>
+                            <rect key="frame" x="16" y="10" width="350" height="21"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
@@ -63,7 +63,7 @@
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
-                        <constraint firstItem="0o7-of-tcf" firstAttribute="top" secondItem="5qX-dJ-3rH" secondAttribute="top" id="5gp-qc-z9K"/>
+                        <constraint firstItem="0o7-of-tcf" firstAttribute="top" secondItem="5qX-dJ-3rH" secondAttribute="top" constant="10" id="5gp-qc-z9K"/>
                         <constraint firstItem="0o7-of-tcf" firstAttribute="leading" secondItem="5qX-dJ-3rH" secondAttribute="leading" constant="16" id="7eP-WV-vrO"/>
                         <constraint firstAttribute="height" constant="82" id="Vjm-lY-CMz"/>
                         <constraint firstItem="KOO-zA-H81" firstAttribute="trailing" secondItem="0o7-of-tcf" secondAttribute="trailing" id="fk2-HW-GyW"/>
@@ -76,7 +76,7 @@
                     <rect key="frame" x="16" y="573" width="382" height="82"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filmes " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7JY-GQ-PE9">
-                            <rect key="frame" x="16" y="0.0" width="350" height="21"/>
+                            <rect key="frame" x="16" y="10" width="350" height="21"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -92,7 +92,7 @@
                     <constraints>
                         <constraint firstItem="7JY-GQ-PE9" firstAttribute="leading" secondItem="Qy5-Ba-Ja0" secondAttribute="leading" constant="16" id="8Gi-YM-5QD"/>
                         <constraint firstAttribute="height" constant="82" id="Cxv-fM-HGq"/>
-                        <constraint firstItem="7JY-GQ-PE9" firstAttribute="top" secondItem="Qy5-Ba-Ja0" secondAttribute="top" id="GgB-hf-akz"/>
+                        <constraint firstItem="7JY-GQ-PE9" firstAttribute="top" secondItem="Qy5-Ba-Ja0" secondAttribute="top" constant="10" id="GgB-hf-akz"/>
                         <constraint firstAttribute="bottom" secondItem="3xk-P6-feE" secondAttribute="bottom" constant="10" id="OF4-6H-xon"/>
                         <constraint firstItem="3xk-P6-feE" firstAttribute="leading" secondItem="7JY-GQ-PE9" secondAttribute="leading" id="OMr-kQ-npb"/>
                         <constraint firstAttribute="trailing" secondItem="7JY-GQ-PE9" secondAttribute="trailing" constant="16" id="bVp-UT-LMx"/>
@@ -102,13 +102,13 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BP6-rd-aKa" userLabel="quiz">
                     <rect key="frame" x="16" y="674" width="382" height="82"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUIZ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjN-aT-5C1">
-                            <rect key="frame" x="16" y="0.0" width="350" height="24"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Respostas corretas do Quiz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjN-aT-5C1">
+                            <rect key="frame" x="16" y="10" width="350" height="24"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 %" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gia-dl-5Sj">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gia-dl-5Sj">
                             <rect key="frame" x="16" y="36" width="350" height="36"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                             <nil key="textColor"/>
@@ -121,7 +121,7 @@
                         <constraint firstAttribute="height" constant="82" id="Oi0-Wj-owd"/>
                         <constraint firstAttribute="trailing" secondItem="Gia-dl-5Sj" secondAttribute="trailing" constant="16" id="a3Q-KI-l7h"/>
                         <constraint firstAttribute="bottom" secondItem="Gia-dl-5Sj" secondAttribute="bottom" constant="10" id="bFM-Am-FXN"/>
-                        <constraint firstItem="pjN-aT-5C1" firstAttribute="top" secondItem="BP6-rd-aKa" secondAttribute="top" id="hdd-y2-Xpf"/>
+                        <constraint firstItem="pjN-aT-5C1" firstAttribute="top" secondItem="BP6-rd-aKa" secondAttribute="top" constant="10" id="hdd-y2-Xpf"/>
                         <constraint firstItem="pjN-aT-5C1" firstAttribute="leading" secondItem="BP6-rd-aKa" secondAttribute="leading" constant="16" id="hhK-eB-zg5"/>
                         <constraint firstAttribute="trailing" secondItem="pjN-aT-5C1" secondAttribute="trailing" constant="16" id="xJG-JQ-cBv"/>
                     </constraints>

@@ -15,8 +15,11 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var question: UILabel!
     @IBOutlet weak var timeView: UIView!
     @IBOutlet weak var sibTitle: UILabel!
+
+    @IBOutlet weak var imageHero: UIImageView!
     
     let quizViewModel =  QuizViewModel()
+    
     init() {
         super.init(nibName: "QuizView", bundle : nil)
     }
@@ -27,7 +30,6 @@ class QuizViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -36,6 +38,7 @@ class QuizViewController: UIViewController {
         setupTimeView()
         getQuiz()
         setupNavBarBack()
+        setupTitle()
     }
     
     func setupNavBarBack(){
@@ -50,7 +53,7 @@ class QuizViewController: UIViewController {
     
     func setupTimeView() {
         timeView.frame.size.width = view.frame.size.width
-        UIView.animate(withDuration: 20.0, delay: 1 , options: .curveLinear, animations: {
+        UIView.animate(withDuration: 20.0, delay: 0 , options: .curveLinear, animations: {
            self.timeView.frame.size.width = 0
         }) { (success) in
            self.showHeroes()
@@ -74,7 +77,7 @@ class QuizViewController: UIViewController {
     }
     
     func setupTitle() {
-        
+        sibTitle.text = "Teste seus conhecimentos"
     }
         
     @IBAction func selectAnswer(_ sender: UIButton) {
