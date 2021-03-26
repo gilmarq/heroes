@@ -19,7 +19,6 @@ enum comics: String {
 enum items: String {
     case comic = "Quadrinhos"
     case filmes =  "Filmes"
-    case series = "Series"
     case quiz = "QUIZ"
     
 }
@@ -99,9 +98,6 @@ extension SelectViewController: UICollectionViewDelegate{
                 let coordinator = PreferredCoordinator(navigationController:navigationController!)
                 coordinator.start()
                 case items.comic.rawValue:
-                let coordinator = PreferredCoordinator(navigationController:navigationController!)
-                coordinator.start()
-                case items.series.rawValue:
                 let coordinator = PreferredCoordinator(navigationController:navigationController!)
                 coordinator.start()
                 case items.quiz.rawValue:

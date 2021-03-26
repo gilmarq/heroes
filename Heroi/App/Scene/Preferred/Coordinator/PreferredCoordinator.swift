@@ -10,18 +10,14 @@ import UIKit
 
 class PreferredCoordinator {
     
-    // MARK: - Instance dependencies
+    var value = ""
     private let navigationController: UINavigationController
-    
-    // MARK: - Instance state
     private var viewController: PreferredViewController!
     
-    // MARK: - Initializers
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
     
-    // MARK: - Coordinator functions
     func start() {
         self.viewController = PreferredViewController()
         self.navigationController.pushViewController(self.viewController, animated: false)

@@ -54,9 +54,7 @@ extension HomeViewController: UICollectionViewDelegate{
         return homeViewModel.universe.count
     }
     
-    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
         
         let coordinator = SelectCoordinator(navigationController: navigationController!)
         let cell: HomeCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)

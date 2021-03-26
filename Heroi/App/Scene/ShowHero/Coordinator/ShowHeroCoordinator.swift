@@ -10,20 +10,18 @@ import UIKit
 
 class ShowHeroCoordinator {
     
-    // MARK: - Instance dependencies
+    var value = ""
+    var imagemString = ""
     private let navigationController: UINavigationController
-    
-    // MARK: - Instance state
     private var viewController: ShowHeroViewController!
     
-    // MARK: - Initializers
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
     
-    // MARK: - Coordinator functions
     func start() {
         self.viewController = ShowHeroViewController()
+        self.viewController.value = value
         self.navigationController.pushViewController(self.viewController, animated: false)
     }
 }

@@ -13,6 +13,7 @@
                 <outlet property="cardComic" destination="5qX-dJ-3rH" id="JPr-Dc-xeJ"/>
                 <outlet property="cardMovie" destination="Qy5-Ba-Ja0" id="xZC-Yy-pu6"/>
                 <outlet property="cardQuiz" destination="BP6-rd-aKa" id="S2h-bj-Cfe"/>
+                <outlet property="imagemHero" destination="jXJ-FR-Qae" id="hNc-LX-nxs"/>
                 <outlet property="quizAnswer" destination="Gia-dl-5Sj" id="WhP-6U-5du"/>
                 <outlet property="titleHero" destination="TPL-ge-9aB" id="hy9-fm-pUw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -40,9 +41,9 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="419"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Iron Man " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPL-ge-9aB">
-                    <rect key="frame" x="16" y="438" width="382" height="24"/>
-                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                    <nil key="textColor"/>
+                    <rect key="frame" x="16" y="432" width="382" height="30"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5qX-dJ-3rH" userLabel="comic">
@@ -103,8 +104,8 @@
                     <rect key="frame" x="16" y="674" width="382" height="82"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Respostas corretas do Quiz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjN-aT-5C1">
-                            <rect key="frame" x="16" y="10" width="350" height="24"/>
-                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <rect key="frame" x="16" y="10.000000000000002" width="350" height="21.666666666666671"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>

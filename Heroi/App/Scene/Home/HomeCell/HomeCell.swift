@@ -33,10 +33,6 @@ class HomeCell: UICollectionViewCell, NibLoadableView ,ReusableView {
         self.imageCard.image = UIImage(named: home.image)
     }
     
-    func teste(with home: HomeModel){
-        self.veue = home.image
-    }
-    
     func setupCard(){
         cardView.layer.masksToBounds = true
         cardView.layer.borderColor = UIColor.lightGray.cgColor

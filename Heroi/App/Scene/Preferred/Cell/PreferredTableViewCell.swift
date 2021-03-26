@@ -12,6 +12,7 @@ class PreferredTableViewCell: UITableViewCell, NibLoadableView, ReusableView {
 
     @IBOutlet weak var cardView: UIView!
     @IBOutlet weak var imageHereo: UIImageView!
+    var value = ""
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,6 +20,7 @@ class PreferredTableViewCell: UITableViewCell, NibLoadableView, ReusableView {
     }
 
     func setup(with preferred: PreferredModal) {
+        self.value = preferred.logo
         self.imageHereo.image = UIImage(named: preferred.logo)
     }
     
@@ -34,5 +36,4 @@ class PreferredTableViewCell: UITableViewCell, NibLoadableView, ReusableView {
            imageHereo.layer.masksToBounds = true
            imageHereo.layer.cornerRadius = 10
        }
-    
 }

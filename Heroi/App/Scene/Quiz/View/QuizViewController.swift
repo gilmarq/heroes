@@ -15,10 +15,9 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var question: UILabel!
     @IBOutlet weak var timeView: UIView!
     @IBOutlet weak var sibTitle: UILabel!
-
     @IBOutlet weak var imageHero: UIImageView!
-    
     let quizViewModel =  QuizViewModel()
+    var value = ""
     
     init() {
         super.init(nibName: "QuizView", bundle : nil)
@@ -53,7 +52,7 @@ class QuizViewController: UIViewController {
     
     func setupTimeView() {
         timeView.frame.size.width = view.frame.size.width
-        UIView.animate(withDuration: 20.0, delay: 0 , options: .curveLinear, animations: {
+        UIView.animate(withDuration: 10.0, delay: 0 , options: .curveLinear, animations: {
            self.timeView.frame.size.width = 0
         }) { (success) in
            self.showHeroes()

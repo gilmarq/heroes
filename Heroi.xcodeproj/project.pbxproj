@@ -12,9 +12,7 @@
 		7C0420092608354F00091C9B /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0420082608354F00091C9B /* QuizModel.swift */; };
 		7C04200D2609819200091C9B /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C04200C2609819200091C9B /* HomeCoordinator.swift */; };
 		7C04201226098F6200091C9B /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C04201126098F6200091C9B /* AppCoordinator.swift */; };
-		7C0420142609990400091C9B /* PreloginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0420132609990400091C9B /* PreloginCoordinator.swift */; };
 		7C0420182609A00A00091C9B /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0420172609A00A00091C9B /* Coordinator.swift */; };
-		7C04201C2609A9CF00091C9B /* SelectEmailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C04201B2609A9CF00091C9B /* SelectEmailCoordinator.swift */; };
 		7C04201F2609AAF400091C9B /* PreferredCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C04201E2609AAF400091C9B /* PreferredCoordinator.swift */; };
 		7C0420222609ABA400091C9B /* ShowHeroCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0420212609ABA400091C9B /* ShowHeroCoordinator.swift */; };
 		7C0420262609AC9D00091C9B /* SelectCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0420252609AC9D00091C9B /* SelectCoordinator.swift */; };
@@ -35,14 +33,6 @@
 		7CEDBF8125F460D900EA76F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CEDBF8025F460D900EA76F5 /* Assets.xcassets */; };
 		7CEDBF8325F460EE00EA76F5 /* EmailMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 7CEDBF8225F460EE00EA76F5 /* EmailMock.json */; };
 		7CEDBF8725F4610B00EA76F5 /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CEDBF8525F4610B00EA76F5 /* HomeView.xib */; };
-		7CEDBF9225F4612500EA76F5 /* SelecioneEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEDBF8C25F4612500EA76F5 /* SelecioneEmailViewController.swift */; };
-		7CEDBF9325F4612500EA76F5 /* EmailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEDBF8D25F4612500EA76F5 /* EmailModel.swift */; };
-		7CEDBF9425F4612500EA76F5 /* SelectEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEDBF8E25F4612500EA76F5 /* SelectEmailViewModel.swift */; };
-		7CEDBF9525F4612500EA76F5 /* SelecioneEmailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CEDBF8F25F4612500EA76F5 /* SelecioneEmailView.xib */; };
-		7CEDBF9625F4612500EA76F5 /* SelectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEDBF9025F4612500EA76F5 /* SelectTableViewCell.swift */; };
-		7CEDBF9725F4612500EA76F5 /* SelectTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CEDBF9125F4612500EA76F5 /* SelectTableViewCell.xib */; };
-		7CEDBF9A25F4613C00EA76F5 /* PreLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CEDBF9825F4613C00EA76F5 /* PreLoginView.xib */; };
-		7CEDBF9B25F4613C00EA76F5 /* PreLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEDBF9925F4613C00EA76F5 /* PreLoginViewController.swift */; };
 		7CEDBFA625F956DB00EA76F5 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEDBFA525F956DB00EA76F5 /* CustomButton.swift */; };
 		7CEDBFAB25FB17A000EA76F5 /* HomeMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 7CEDBFAA25FB17A000EA76F5 /* HomeMock.json */; };
 		7CEDBFB025FB185C00EA76F5 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEDBFAF25FB185C00EA76F5 /* HomeModel.swift */; };
@@ -69,9 +59,6 @@
 		7CFB5CCC2602E5A200FB2B5B /* ShowHeroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFB5CCA2602E5A200FB2B5B /* ShowHeroViewController.swift */; };
 		7CFB5CCD2602E5A200FB2B5B /* ShowHeroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CFB5CCB2602E5A200FB2B5B /* ShowHeroViewController.xib */; };
 		7CFB5CCF2602EDF000FB2B5B /* ShowHeroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFB5CCE2602EDF000FB2B5B /* ShowHeroModel.swift */; };
-		7CFB5CD326030A0400FB2B5B /* LoginViewMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFB5CD226030A0400FB2B5B /* LoginViewMode.swift */; };
-		7CFB5CD626030AF500FB2B5B /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CFB5CD426030AF500FB2B5B /* LoginView.xib */; };
-		7CFB5CD726030AF500FB2B5B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFB5CD526030AF500FB2B5B /* LoginViewController.swift */; };
 		7CFB5CD926030CB400FB2B5B /* PreloginTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CFB5CD826030CB400FB2B5B /* PreloginTest.swift */; };
 		B07E15853F6023A083B04C89 /* Pods_Heroi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBFD0527C24D006DF782ABF0 /* Pods_Heroi.framework */; };
 		C55899530B09D6AEE86B6567 /* Pods_Heroi_HeroiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCA8C6276452EB407F07E23A /* Pods_Heroi_HeroiUITests.framework */; };
@@ -102,9 +89,7 @@
 		7C0420082608354F00091C9B /* QuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
 		7C04200C2609819200091C9B /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		7C04201126098F6200091C9B /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		7C0420132609990400091C9B /* PreloginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloginCoordinator.swift; sourceTree = "<group>"; };
 		7C0420172609A00A00091C9B /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		7C04201B2609A9CF00091C9B /* SelectEmailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectEmailCoordinator.swift; sourceTree = "<group>"; };
 		7C04201E2609AAF400091C9B /* PreferredCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferredCoordinator.swift; sourceTree = "<group>"; };
 		7C0420212609ABA400091C9B /* ShowHeroCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowHeroCoordinator.swift; sourceTree = "<group>"; };
 		7C0420252609AC9D00091C9B /* SelectCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCoordinator.swift; sourceTree = "<group>"; };
@@ -131,14 +116,6 @@
 		7CEDBF8025F460D900EA76F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CEDBF8225F460EE00EA76F5 /* EmailMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EmailMock.json; sourceTree = "<group>"; };
 		7CEDBF8525F4610B00EA76F5 /* HomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
-		7CEDBF8C25F4612500EA76F5 /* SelecioneEmailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelecioneEmailViewController.swift; sourceTree = "<group>"; };
-		7CEDBF8D25F4612500EA76F5 /* EmailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailModel.swift; sourceTree = "<group>"; };
-		7CEDBF8E25F4612500EA76F5 /* SelectEmailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectEmailViewModel.swift; sourceTree = "<group>"; };
-		7CEDBF8F25F4612500EA76F5 /* SelecioneEmailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelecioneEmailView.xib; sourceTree = "<group>"; };
-		7CEDBF9025F4612500EA76F5 /* SelectTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectTableViewCell.swift; sourceTree = "<group>"; };
-		7CEDBF9125F4612500EA76F5 /* SelectTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectTableViewCell.xib; sourceTree = "<group>"; };
-		7CEDBF9825F4613C00EA76F5 /* PreLoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreLoginView.xib; sourceTree = "<group>"; };
-		7CEDBF9925F4613C00EA76F5 /* PreLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreLoginViewController.swift; sourceTree = "<group>"; };
 		7CEDBFA525F956DB00EA76F5 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		7CEDBFAA25FB17A000EA76F5 /* HomeMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HomeMock.json; sourceTree = "<group>"; };
 		7CEDBFAF25FB185C00EA76F5 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
@@ -165,9 +142,6 @@
 		7CFB5CCA2602E5A200FB2B5B /* ShowHeroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowHeroViewController.swift; sourceTree = "<group>"; };
 		7CFB5CCB2602E5A200FB2B5B /* ShowHeroViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowHeroViewController.xib; sourceTree = "<group>"; };
 		7CFB5CCE2602EDF000FB2B5B /* ShowHeroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowHeroModel.swift; sourceTree = "<group>"; };
-		7CFB5CD226030A0400FB2B5B /* LoginViewMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewMode.swift; sourceTree = "<group>"; };
-		7CFB5CD426030AF500FB2B5B /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
-		7CFB5CD526030AF500FB2B5B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7CFB5CD826030CB400FB2B5B /* PreloginTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreloginTest.swift; sourceTree = "<group>"; };
 		86BC0F0628B35F17CCE9DAA5 /* Pods-Heroi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heroi.debug.xcconfig"; path = "Target Support Files/Pods-Heroi/Pods-Heroi.debug.xcconfig"; sourceTree = "<group>"; };
 		B4B7064B055028A9B25E432B /* Pods-Heroi-HeroiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Heroi-HeroiUITests.release.xcconfig"; path = "Target Support Files/Pods-Heroi-HeroiUITests/Pods-Heroi-HeroiUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -249,23 +223,6 @@
 			children = (
 				7C0420172609A00A00091C9B /* Coordinator.swift */,
 				7C04201126098F6200091C9B /* AppCoordinator.swift */,
-			);
-			path = Coordinator;
-			sourceTree = "<group>";
-		};
-		7C04201526099CFE00091C9B /* View */ = {
-			isa = PBXGroup;
-			children = (
-				7CEDBF9825F4613C00EA76F5 /* PreLoginView.xib */,
-				7CEDBF9925F4613C00EA76F5 /* PreLoginViewController.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		7C04201626099D0A00091C9B /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				7C0420132609990400091C9B /* PreloginCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -400,21 +357,9 @@
 				7CFB5CB325FDCCB900FB2B5B /* Quiz */,
 				7CFB5CAA25FDC3B300FB2B5B /* ShowHero */,
 				7CFB5CA225FD5D3000FB2B5B /* Preferred */,
-				7CEDBF6D25F45F8200EA76F5 /* PreLogin */,
-				7CEDBF7025F45FB300EA76F5 /* SelectEmail */,
-				7CEDBF6F25F45FA100EA76F5 /* Login */,
 				7CEDBF6E25F45F9800EA76F5 /* Home */,
 			);
 			path = Scene;
-			sourceTree = "<group>";
-		};
-		7CEDBF6D25F45F8200EA76F5 /* PreLogin */ = {
-			isa = PBXGroup;
-			children = (
-				7C04201526099CFE00091C9B /* View */,
-				7C04201626099D0A00091C9B /* Coordinator */,
-			);
-			path = PreLogin;
 			sourceTree = "<group>";
 		};
 		7CEDBF6E25F45F9800EA76F5 /* Home */ = {
@@ -427,27 +372,6 @@
 				7CEDBFAE25FB184300EA76F5 /* ViewModel */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		7CEDBF6F25F45FA100EA76F5 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				7CFB5CD0260309CB00FB2B5B /* View */,
-				7CFB5CD1260309DB00FB2B5B /* ViewModel */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		7CEDBF7025F45FB300EA76F5 /* SelectEmail */ = {
-			isa = PBXGroup;
-			children = (
-				7CEDBFA725F9B66700EA76F5 /* Coordinator */,
-				7CEDBFA125F4747200EA76F5 /* Model */,
-				7CEDBFA325F4749B00EA76F5 /* View */,
-				7CEDBFA425F474AF00EA76F5 /* ViewModel */,
-				7CEDBFA225F4748100EA76F5 /* SelectEmailCell */,
-			);
-			path = SelectEmail;
 			sourceTree = "<group>";
 		};
 		7CEDBF7125F45FD300EA76F5 /* Assets */ = {
@@ -490,48 +414,6 @@
 				7CEDBFB525FB1EE900EA76F5 /* HomeCell.swift */,
 			);
 			path = HomeCell;
-			sourceTree = "<group>";
-		};
-		7CEDBFA125F4747200EA76F5 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				7CEDBF8D25F4612500EA76F5 /* EmailModel.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		7CEDBFA225F4748100EA76F5 /* SelectEmailCell */ = {
-			isa = PBXGroup;
-			children = (
-				7CEDBF9025F4612500EA76F5 /* SelectTableViewCell.swift */,
-				7CEDBF9125F4612500EA76F5 /* SelectTableViewCell.xib */,
-			);
-			path = SelectEmailCell;
-			sourceTree = "<group>";
-		};
-		7CEDBFA325F4749B00EA76F5 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				7CEDBF8F25F4612500EA76F5 /* SelecioneEmailView.xib */,
-				7CEDBF8C25F4612500EA76F5 /* SelecioneEmailViewController.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		7CEDBFA425F474AF00EA76F5 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				7CEDBF8E25F4612500EA76F5 /* SelectEmailViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		7CEDBFA725F9B66700EA76F5 /* Coordinator */ = {
-			isa = PBXGroup;
-			children = (
-				7C04201B2609A9CF00091C9B /* SelectEmailCoordinator.swift */,
-			);
-			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		7CEDBFAC25FB181200EA76F5 /* View */ = {
@@ -706,23 +588,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		7CFB5CD0260309CB00FB2B5B /* View */ = {
-			isa = PBXGroup;
-			children = (
-				7CFB5CD426030AF500FB2B5B /* LoginView.xib */,
-				7CFB5CD526030AF500FB2B5B /* LoginViewController.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		7CFB5CD1260309DB00FB2B5B /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				7CFB5CD226030A0400FB2B5B /* LoginViewMode.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -834,7 +699,6 @@
 			files = (
 				7CEDBF8125F460D900EA76F5 /* Assets.xcassets in Resources */,
 				7CEDBF8725F4610B00EA76F5 /* HomeView.xib in Resources */,
-				7CFB5CD626030AF500FB2B5B /* LoginView.xib in Resources */,
 				7CEDBFCD25FC6F7C00EA76F5 /* SelectHeroes.json in Resources */,
 				7CEDBF4625F45ECA00EA76F5 /* LaunchScreen.storyboard in Resources */,
 				7CFB5CBA2600474100FB2B5B /* SelectMock.json in Resources */,
@@ -842,15 +706,12 @@
 				7CFB5CA925FD5EFA00FB2B5B /* PreferredViewController.xib in Resources */,
 				7CFB5CC42601A0DF00FB2B5B /* PreferredMock.json in Resources */,
 				7CFB5CAF25FDCB1000FB2B5B /* PreferredTableViewCell.xib in Resources */,
-				7CEDBF9A25F4613C00EA76F5 /* PreLoginView.xib in Resources */,
 				7CFB5CCD2602E5A200FB2B5B /* ShowHeroViewController.xib in Resources */,
 				7CEDBFC725FC61A200EA76F5 /* SelectView.xib in Resources */,
 				7CEDBFCB25FC6A1200EA76F5 /* SelectCell.xib in Resources */,
 				7CEDBF8325F460EE00EA76F5 /* EmailMock.json in Resources */,
-				7CEDBF9525F4612500EA76F5 /* SelecioneEmailView.xib in Resources */,
 				7CEDBFAB25FB17A000EA76F5 /* HomeMock.json in Resources */,
 				7CFB5CB825FDCCF900FB2B5B /* QuizView.xib in Resources */,
-				7CEDBF9725F4612500EA76F5 /* SelectTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -980,7 +841,6 @@
 			files = (
 				7C04202A260AFBE000091C9B /* QuizCoordinator.swift in Sources */,
 				7CEDBFC625FC61A200EA76F5 /* SelectViewController.swift in Sources */,
-				7C04201C2609A9CF00091C9B /* SelectEmailCoordinator.swift in Sources */,
 				7CEDBFB225FB190200EA76F5 /* HomeViewModel.swift in Sources */,
 				7CFB5CBE260047DF00FB2B5B /* PreferredViewModel.swift in Sources */,
 				7CEDBFCA25FC6A1200EA76F5 /* SelectCell.swift in Sources */,
@@ -989,7 +849,6 @@
 				7C0CCAFE26081D2C0013F4F1 /* QuizViewModel.swift in Sources */,
 				7CEDBFB025FB185C00EA76F5 /* HomeModel.swift in Sources */,
 				7CEDBF7C25F460C100EA76F5 /* UITableViewCell+Extrension.swift in Sources */,
-				7C0420142609990400091C9B /* PreloginCoordinator.swift in Sources */,
 				7CFB5CBC260047A300FB2B5B /* PreferredModal.swift in Sources */,
 				7CFB5CAE25FDCB1000FB2B5B /* PreferredTableViewCell.swift in Sources */,
 				7C042032260D2B5E00091C9B /* CustomiViews.swift in Sources */,
@@ -998,7 +857,6 @@
 				7CFB5CCF2602EDF000FB2B5B /* ShowHeroModel.swift in Sources */,
 				7C0420222609ABA400091C9B /* ShowHeroCoordinator.swift in Sources */,
 				7C0420182609A00A00091C9B /* Coordinator.swift in Sources */,
-				7CFB5CD726030AF500FB2B5B /* LoginViewController.swift in Sources */,
 				7CFB5CC226004F3300FB2B5B /* SelectModel.swift in Sources */,
 				7CEDBF7F25F460C100EA76F5 /* UICollectionViewCell+Extension.swift in Sources */,
 				7CEDBFA625F956DB00EA76F5 /* CustomButton.swift in Sources */,
@@ -1006,20 +864,14 @@
 				7C042005260820E500091C9B /* QuizViewController.swift in Sources */,
 				7CFB5CC026004F1F00FB2B5B /* SelectViewModel.swift in Sources */,
 				7C0420092608354F00091C9B /* QuizModel.swift in Sources */,
-				7CEDBF9225F4612500EA76F5 /* SelecioneEmailViewController.swift in Sources */,
 				7CFB5CCC2602E5A200FB2B5B /* ShowHeroViewController.swift in Sources */,
 				7CEDBF7625F460B500EA76F5 /* ProtocoloReusableView.swift in Sources */,
 				7C04201226098F6200091C9B /* AppCoordinator.swift in Sources */,
-				7CEDBF9325F4612500EA76F5 /* EmailModel.swift in Sources */,
 				7C04201F2609AAF400091C9B /* PreferredCoordinator.swift in Sources */,
 				7CEDBF7E25F460C100EA76F5 /* UITextField+Extension.swift in Sources */,
-				7CEDBF9425F4612500EA76F5 /* SelectEmailViewModel.swift in Sources */,
 				7CEDBF7D25F460C100EA76F5 /* Decodable+Extension.swift in Sources */,
-				7CEDBF9625F4612500EA76F5 /* SelectTableViewCell.swift in Sources */,
 				7CEDBFB625FB1EE900EA76F5 /* HomeCell.swift in Sources */,
-				7CEDBF9B25F4613C00EA76F5 /* PreLoginViewController.swift in Sources */,
 				7CFB5CA825FD5EFA00FB2B5B /* PreferredViewController.swift in Sources */,
-				7CFB5CD326030A0400FB2B5B /* LoginViewMode.swift in Sources */,
 				7CEDBF7725F460B500EA76F5 /* ProtocoloNib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

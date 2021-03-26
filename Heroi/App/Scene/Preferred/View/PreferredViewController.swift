@@ -50,14 +50,20 @@ extension PreferredViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return preferredViewModel.preferre.count
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        let cell: PreferredTableViewCell = tableView.dequeueReusableCell(forIndexPath: indexPath)
+        cell.setup(with: preferredViewModel.preferre[indexPath.row])
         
         let coordinator = ShowHeroCoordinator(navigationController:navigationController!)
+        coordinator.imagemString = cell.value
+        coordinator.value = cell.value
         coordinator.start()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell: PreferredTableViewCell = tableView.dequeueReusableCell(forIndexPath: indexPath)
         cell.setup(with: preferredViewModel.preferre[indexPath.row])
         return cell
