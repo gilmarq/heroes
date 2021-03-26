@@ -52,7 +52,7 @@ class QuizViewController: UIViewController {
     
     func setupTimeView() {
         timeView.frame.size.width = view.frame.size.width
-        UIView.animate(withDuration: 10.0, delay: 0 , options: .curveLinear, animations: {
+        UIView.animate(withDuration: 50.0, delay: 0 , options: .curveLinear, animations: {
            self.timeView.frame.size.width = 0
         }) { (success) in
            self.showHeroes()

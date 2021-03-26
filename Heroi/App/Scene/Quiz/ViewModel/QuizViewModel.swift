@@ -14,9 +14,9 @@ class QuizViewModel {
     private let quizes: [(question: String, correctAnswer: String, options: [String])] = [
         (question: "Qual personagem mais famoso da Marvel?", correctAnswer: "Homem de Ferro",
          
-         options: ["Homem de Ferro", "\"Loki\"", "Capitão america ", "Homen aranha"]),
-        (question: "em qual personagem da DC foi inspirado Thanos?", correctAnswer: "Darkside",
-         options: ["Darkside", "Batman",  "Apocalipse", "omega red"]),
+         options: ["Homem de Ferro","Loki","Capitão america", "Homen aranha"]),
+        (question: "Em qual personagem da DC foi inspirado Thanos?", correctAnswer: "Darkside",
+         options: ["Darkside", "Batman",  "Apocalipse", "Omega Red"]),
         (question: "em que ano foi fudada a marvel comics?",correctAnswer:"1939",
          options: ["1940", "1935", "1970", "1939"]),
         (question: "Qual foi o primeiro filme da marvel studio?", correctAnswer: "Homem de Ferro",
@@ -26,7 +26,7 @@ class QuizViewModel {
         (question: "Qual é maior bilheteria da marvel?", correctAnswer: "Avengers: ultimato",
          options: ["Guardiões da Galaxia", "Avengers: ultimato", "Homen aranha", "Capitão america"]),
         (question: "Quem foi o fundador da Marvel", correctAnswer:"Martin Goodman",
-         options: ["Martin Goodman", "Stan Lee", "jack kirby", "fKevin Feige"]),
+         options: ["Martin Goodman", "Stan Lee", "jack kirby", "Kevin Feige"]),
     ]
     
     private var quiz: QuizModel!
