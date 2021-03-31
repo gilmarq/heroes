@@ -1,5 +1,5 @@
 Heróis:
-Este App é com o intuito de estudo.
+Este App é com o intuito de estudo <br >
 Aplicativo de teste de conhecimento sobre os universos da cultura pop.
 
 Requisitos:
