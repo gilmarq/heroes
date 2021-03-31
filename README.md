@@ -4,10 +4,9 @@ Este App é com o intuito de estudo.
 Aplicativo de teste de conhecimento sobre os universos da cultura pop.
 
 Requisitos:
+
 Xcode: 11.7
-
 iOS: 12
-
 Swift: 5
 
 Projeto:
