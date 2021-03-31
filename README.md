@@ -1,6 +1,7 @@
 Heróis: <br >
 Este App é com o intuito de estudo.<br >
 Aplicativo de teste de conhecimento sobre os universos da cultura pop.<br >
+
 Requisitos: <br >
 Xcode: 11,7 <br >
 iOS: 12<br >
