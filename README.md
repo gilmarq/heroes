@@ -1,11 +1,19 @@
-# heroes
-Este App e com o intuito de estudo.
 
-Aplicativo de teste sobre conhecimentos sobre os universos da cultura pop
-este app esta feito com padrão MVVM-C, CoocaoPods porem ainda não esta em uso.
+Heróis:
+Este App é com o intuito de estudo.
+Aplicativo de teste de conhecimento sobre os universos da cultura pop.
 
-usando CollectioView  e tableView
-todos os dados são Mock
+Requisitos:
+Xcode: 11.7
+iOS: 12
+Swift: 5
 
-quando baixa o projeto execute um pod install 
+Projeto:
+
+Arquitetura  MVVM-C, está sendo usando xib comunicação entre as telas Coordinator,
+usando Collectio View e TableView todos os dados são Mock,
+CoocoaPods porém ainda não está em uso.
+
+Modo rodar :
+Quando baixa o projeto execute um pod install.
 
