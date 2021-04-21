@@ -28,6 +28,4 @@ class QuizModel {
         let answer = options[index]
         return answer == correctAnswer
     }
-    
-    
 }

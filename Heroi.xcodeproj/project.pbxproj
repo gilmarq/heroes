@@ -19,7 +19,19 @@
 		7C04202A260AFBE000091C9B /* QuizCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C042029260AFBE000091C9B /* QuizCoordinator.swift */; };
 		7C042030260BFC1300091C9B /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C04202F260BFC1300091C9B /* CustomLabel.swift */; };
 		7C042032260D2B5E00091C9B /* CustomiViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C042031260D2B5E00091C9B /* CustomiViews.swift */; };
+		7C042036260E58A600091C9B /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C042035260E58A600091C9B /* HomeViewModelTests.swift */; };
+		7C04203B260E633300091C9B /* HomeModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C04203A260E633300091C9B /* HomeModelTests.swift */; };
+		7C04203F260E66A300091C9B /* PreferredModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C04203E260E66A300091C9B /* PreferredModelTests.swift */; };
+		7C042043260E672900091C9B /* SelectViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C042042260E672900091C9B /* SelectViewModelTests.swift */; };
+		7C042045260E6AF300091C9B /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C042044260E6AF300091C9B /* HomeViewControllerTests.swift */; };
+		7C042048260EB87B00091C9B /* DecodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C042047260EB87B00091C9B /* DecodableTests.swift */; };
 		7C0CCAFE26081D2C0013F4F1 /* QuizViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0CCAFD26081D2C0013F4F1 /* QuizViewModel.swift */; };
+		7C63CB352612548800560823 /* PreferredViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C63CB342612548800560823 /* PreferredViewModelTests.swift */; };
+		7C63CB3B2612583E00560823 /* SelectModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C63CB3A2612583E00560823 /* SelectModelTests.swift */; };
+		7C63CB3D26136B6A00560823 /* QuizViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C63CB3C26136B6A00560823 /* QuizViewModelTests.swift */; };
+		7C63CB4026136E1200560823 /* QuizModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C63CB3F26136E1200560823 /* QuizModelTests.swift */; };
+		7C63CB42261376B000560823 /* ShowHeroViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C63CB41261376B000560823 /* ShowHeroViewControllerTests.swift */; };
+		7C63CC10262FF28500560823 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C63CC0F262FF28500560823 /* GoogleService-Info.plist */; };
 		7CEDBF3A25F45EC900EA76F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEDBF3925F45EC900EA76F5 /* AppDelegate.swift */; };
 		7CEDBF4625F45ECA00EA76F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CEDBF4425F45ECA00EA76F5 /* LaunchScreen.storyboard */; };
 		7CEDBF5125F45ECA00EA76F5 /* HeroiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEDBF5025F45ECA00EA76F5 /* HeroiTests.swift */; };
@@ -96,7 +108,19 @@
 		7C042029260AFBE000091C9B /* QuizCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizCoordinator.swift; sourceTree = "<group>"; };
 		7C04202F260BFC1300091C9B /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		7C042031260D2B5E00091C9B /* CustomiViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomiViews.swift; sourceTree = "<group>"; };
+		7C042035260E58A600091C9B /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		7C04203A260E633300091C9B /* HomeModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModelTests.swift; sourceTree = "<group>"; };
+		7C04203E260E66A300091C9B /* PreferredModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferredModelTests.swift; sourceTree = "<group>"; };
+		7C042042260E672900091C9B /* SelectViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewModelTests.swift; sourceTree = "<group>"; };
+		7C042044260E6AF300091C9B /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
+		7C042047260EB87B00091C9B /* DecodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableTests.swift; sourceTree = "<group>"; };
 		7C0CCAFD26081D2C0013F4F1 /* QuizViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewModel.swift; sourceTree = "<group>"; };
+		7C63CB342612548800560823 /* PreferredViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferredViewModelTests.swift; sourceTree = "<group>"; };
+		7C63CB3A2612583E00560823 /* SelectModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectModelTests.swift; sourceTree = "<group>"; };
+		7C63CB3C26136B6A00560823 /* QuizViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewModelTests.swift; sourceTree = "<group>"; };
+		7C63CB3F26136E1200560823 /* QuizModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModelTests.swift; sourceTree = "<group>"; };
+		7C63CB41261376B000560823 /* ShowHeroViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowHeroViewControllerTests.swift; sourceTree = "<group>"; };
+		7C63CC0F262FF28500560823 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7CEDBF3625F45EC900EA76F5 /* Heroi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Heroi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CEDBF3925F45EC900EA76F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CEDBF4525F45ECA00EA76F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -267,6 +291,37 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		7C04203C260E633F00091C9B /* ModelTeste */ = {
+			isa = PBXGroup;
+			children = (
+				7C04203A260E633300091C9B /* HomeModelTests.swift */,
+				7C04203E260E66A300091C9B /* PreferredModelTests.swift */,
+				7C63CB3A2612583E00560823 /* SelectModelTests.swift */,
+				7C63CB3F26136E1200560823 /* QuizModelTests.swift */,
+			);
+			path = ModelTeste;
+			sourceTree = "<group>";
+		};
+		7C04203D260E637500091C9B /* ViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				7C042035260E58A600091C9B /* HomeViewModelTests.swift */,
+				7C042042260E672900091C9B /* SelectViewModelTests.swift */,
+				7C63CB342612548800560823 /* PreferredViewModelTests.swift */,
+				7C63CB3C26136B6A00560823 /* QuizViewModelTests.swift */,
+			);
+			path = ViewModelTests;
+			sourceTree = "<group>";
+		};
+		7C042046260E6B8400091C9B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7C042044260E6AF300091C9B /* HomeViewControllerTests.swift */,
+				7C63CB41261376B000560823 /* ShowHeroViewControllerTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		7CEDBF2D25F45EC900EA76F5 = {
 			isa = PBXGroup;
 			children = (
@@ -306,6 +361,10 @@
 			children = (
 				7CEDBF5025F45ECA00EA76F5 /* HeroiTests.swift */,
 				7CEDBF5225F45ECA00EA76F5 /* Info.plist */,
+				7C04203D260E637500091C9B /* ViewModelTests */,
+				7C04203C260E633F00091C9B /* ModelTeste */,
+				7C042046260E6B8400091C9B /* View */,
+				7C042047260EB87B00091C9B /* DecodableTests.swift */,
 			);
 			path = HeroiTests;
 			sourceTree = "<group>";
@@ -325,6 +384,7 @@
 			children = (
 				7CEDBF3925F45EC900EA76F5 /* AppDelegate.swift */,
 				7CEDBF4425F45ECA00EA76F5 /* LaunchScreen.storyboard */,
+				7C63CC0F262FF28500560823 /* GoogleService-Info.plist */,
 				7CEDBF4725F45ECA00EA76F5 /* Info.plist */,
 			);
 			path = Application;
@@ -706,6 +766,7 @@
 				7CFB5CA925FD5EFA00FB2B5B /* PreferredViewController.xib in Resources */,
 				7CFB5CC42601A0DF00FB2B5B /* PreferredMock.json in Resources */,
 				7CFB5CAF25FDCB1000FB2B5B /* PreferredTableViewCell.xib in Resources */,
+				7C63CC10262FF28500560823 /* GoogleService-Info.plist in Resources */,
 				7CFB5CCD2602E5A200FB2B5B /* ShowHeroViewController.xib in Resources */,
 				7CEDBFC725FC61A200EA76F5 /* SelectView.xib in Resources */,
 				7CEDBFCB25FC6A1200EA76F5 /* SelectCell.xib in Resources */,
@@ -880,7 +941,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C63CB3B2612583E00560823 /* SelectModelTests.swift in Sources */,
+				7C04203B260E633300091C9B /* HomeModelTests.swift in Sources */,
+				7C042045260E6AF300091C9B /* HomeViewControllerTests.swift in Sources */,
+				7C63CB4026136E1200560823 /* QuizModelTests.swift in Sources */,
 				7CEDBF5125F45ECA00EA76F5 /* HeroiTests.swift in Sources */,
+				7C042036260E58A600091C9B /* HomeViewModelTests.swift in Sources */,
+				7C042048260EB87B00091C9B /* DecodableTests.swift in Sources */,
+				7C042043260E672900091C9B /* SelectViewModelTests.swift in Sources */,
+				7C63CB3D26136B6A00560823 /* QuizViewModelTests.swift in Sources */,
+				7C63CB352612548800560823 /* PreferredViewModelTests.swift in Sources */,
+				7C04203F260E66A300091C9B /* PreferredModelTests.swift in Sources */,
+				7C63CB42261376B000560823 /* ShowHeroViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

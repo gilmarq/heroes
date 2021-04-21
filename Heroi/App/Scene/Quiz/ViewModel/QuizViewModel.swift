@@ -11,9 +11,8 @@ import Foundation
 class QuizViewModel {
     
     //MARK:- variables
-    private let quizes: [(question: String, correctAnswer: String, options: [String])] = [
+     let quizes: [(question: String, correctAnswer: String, options: [String])] = [
         (question: "Qual personagem mais famoso da Marvel?", correctAnswer: "Homem de Ferro",
-         
          options: ["Homem de Ferro","Loki","Capitão america", "Homen aranha"]),
         (question: "Em qual personagem da DC foi inspirado Thanos?", correctAnswer: "Darkside",
          options: ["Darkside", "Batman",  "Apocalipse", "Omega Red"]),
@@ -29,16 +28,19 @@ class QuizViewModel {
          options: ["Martin Goodman", "Stan Lee", "jack kirby", "Kevin Feige"]),
     ]
     
-    private var quiz: QuizModel!
+     var quiz: QuizModel!
         
-    private var _totalCorrecteAnswer = 0
+     var _totalCorrecteAnswer = 0
     
     var questions: String {
+        print(quiz.options)
         return quiz.question
     }
+    
     var options: [String]{
         return quiz.options
     }
+    
     var totalCorrecteAnswer: Int {
         return _totalCorrecteAnswer
     }

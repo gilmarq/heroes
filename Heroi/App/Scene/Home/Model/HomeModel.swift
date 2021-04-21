@@ -9,6 +9,5 @@
 import Foundation
 
 class HomeModel: Codable {
-    
     let image: String
 }

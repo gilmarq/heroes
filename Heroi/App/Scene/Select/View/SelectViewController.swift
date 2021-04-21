@@ -87,13 +87,13 @@ class SelectViewController: UIViewController {
 extension SelectViewController: UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
          
-        return viewModel.select.count
+        return viewModel.select?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let item = viewModel.select[indexPath.row]
+        let item = viewModel.select?[indexPath.row]
         
-            switch item.text {
+        switch item?.text {
                 case items.filmes.rawValue:
                 let coordinator = PreferredCoordinator(navigationController:navigationController!)
                 coordinator.start()
@@ -115,7 +115,7 @@ extension SelectViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let controller = PreferredViewController()
         let cell: SelectCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
-        cell.setup(with: viewModel.select[indexPath.row])
+        cell.setup(with: (viewModel.select?[indexPath.row])!)
         controller.value = cell.value
         
         return cell
