@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,13 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let navController = UINavigationController()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
+
         navController.navigationBar.backItem?.title = " "
         window?.rootViewController = navController
         
         self.appCoordinator = AppCoordinator(navigationController: navController)
-        self.appCoordinator.start()
         
+        self.appCoordinator.start()
+
+        FirebaseApp.configure()
+
         window?.makeKeyAndVisible()
         
         return true

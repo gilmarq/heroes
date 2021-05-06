@@ -10,10 +10,10 @@ import Foundation
 
 class SelectViewModel {
     
-    var select: [SelectModel] = []
+    var select: [SelectModel]?
     var text = ""
     
     func formtJson(){
-        select = [SelectModel].formatJson("SelectMock") ?? []
+        select = [SelectModel].formatJson("SelectMock")
     }
 }

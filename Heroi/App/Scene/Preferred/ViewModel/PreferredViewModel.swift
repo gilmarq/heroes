@@ -16,5 +16,4 @@ class PreferredViewModel {
     func formtJson(){
         preferre = [PreferredModal].formatJson("PreferredMock") ?? []
     }
-
 }

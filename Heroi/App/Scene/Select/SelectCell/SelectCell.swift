@@ -23,7 +23,6 @@ class SelectCell: UICollectionViewCell,NibLoadableView ,ReusableView  {
     }
     func setup(with text: SelectModel) {
         self.textLabel.text = text.text
-        
     }
     
     func setupCardView() {
