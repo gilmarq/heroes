@@ -77,20 +77,20 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (7.3.1):
     - GoogleUtilities/Logger
-  - Moya (14.0.0):
-    - Moya/Core (= 14.0.0)
-  - Moya/Core (14.0.0):
-    - Alamofire (~> 5.0)
+  - Kingfisher (4.10.1)
   - nanopb (2.30908.0):
     - nanopb/decode (= 2.30908.0)
     - nanopb/encode (= 2.30908.0)
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
   - PromisesObjC (1.2.12)
+  - SwiftHash (2.0.2)
 
 DEPENDENCIES:
+  - Alamofire (~> 5.2)
   - Firebase
-  - Moya (~> 14.0)
+  - Kingfisher (~> 4.0)
+  - SwiftHash
 
 SPEC REPOS:
   trunk:
@@ -103,9 +103,10 @@ SPEC REPOS:
     - GoogleAppMeasurement
     - GoogleDataTransport
     - GoogleUtilities
-    - Moya
+    - Kingfisher
     - nanopb
     - PromisesObjC
+    - SwiftHash
 
 SPEC CHECKSUMS:
   Alamofire: bfbc4c2fe5909b1d94fb4ef2277c6b3727ef5dae
@@ -117,10 +118,11 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: fd19169c3034975cb934e865e5667bfdce59df7f
   GoogleDataTransport: cd9db2180fcecd8da1b561aea31e3e56cf834aa7
   GoogleUtilities: e1d9ed4e544fc32a93e00e721400cbc3f377200d
-  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
+  SwiftHash: 6d312abe61c8359bdef8d0093642f3a70b1c17ba
 
-PODFILE CHECKSUM: 061c46991536bbeee49e23bbc1d90947f3c6dcb5
+PODFILE CHECKSUM: 548acf2e293fe725fd09972bf1144b36eced9a48
 
 COCOAPODS: 1.10.1

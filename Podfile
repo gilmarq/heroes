@@ -2,11 +2,11 @@
 # platform :ios, '9.0'
 
 target 'Heroi' do
-  # Comment the next line if you don't want to use dynamic frameworks
-  use_frameworks!
-
+  
    pod 'Firebase'
-   pod  'Moya' ,  '~> 14.0'
+   pod 'Alamofire', '~> 5.2'
+   pod 'Kingfisher', '~> 4.0'
+   pod 'SwiftHash'
    
   target 'HeroiTests' do
     inherit! :search_paths
