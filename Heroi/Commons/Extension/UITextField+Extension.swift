@@ -31,5 +31,19 @@ extension UITextField {
          self.tintColor = .lightGray
          
      }
-    
+
+    func error() {
+        layer.borderColor = UIColor.red.cgColor
+        layer.borderWidth = 2
+    }
+
+    func errorClean() {
+           layer.borderColor = UIColor.clear.cgColor
+           layer.borderWidth = 0
+       }
+
+
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        print("##21 trrt")
+    }
 }

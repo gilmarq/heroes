@@ -28,6 +28,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
 
         window?.makeKeyAndVisible()
+
+        
         
         return true
     }

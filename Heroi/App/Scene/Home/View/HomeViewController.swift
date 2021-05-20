@@ -8,16 +8,29 @@
 
 import UIKit
 
+enum heroes: String {
+    case marvel = "Marvel"
+    case dc = "DC"
+    case starWars = "StarWars"
+}
+
+//enum comics: String {
+//    case Marvel = "Marvel"
+//    case DC = "DC"
+//    case StarWars = "StarWars"
+//    case disney = "disney"
+//}
 class HomeViewController: UIViewController {
     
     //MARK:- Outlet
     @IBOutlet weak var collectionView: UICollectionView!
     
-       //MARK:- o
+    //MARK:- o
+    
     var universe: [HomeModel] = []
     var homeViewModel = HomeViewModel()
     var imagemStrig = ""
-    
+    var value = ""
     //MARK:- parameter
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,14 +73,42 @@ extension HomeViewController: UICollectionViewDelegate{
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        let coordinator = SelectCoordinator(navigationController: navigationController!)
-        let cell: HomeCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
-        cell.setup(with: homeViewModel.universe[indexPath.row])
-        coordinator.value = cell.veue
-        coordinator.start()
+
+        let value = homeViewModel.universe[indexPath.row]
+        print(value.image)
+        switch value.image {
+            case heroes.marvel.rawValue:
+
+                let coordinator = SelectCoordinator(navigationController: navigationController!)
+                let cell: HomeCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
+                cell.setup(with: homeViewModel.universe[indexPath.row])
+                coordinator.value = cell.veue
+                coordinator.start()
+
+            case heroes.dc.rawValue:
+                let coordinator = SelectCoordinator(navigationController: navigationController!)
+                               let cell: HomeCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
+                               cell.setup(with: homeViewModel.universe[indexPath.row])
+                               coordinator.value = cell.veue
+                               coordinator.start()
+            case heroes.starWars.rawValue:
+
+                 let coordinator = SelectCoordinator(navigationController: navigationController!)
+                               let cell: HomeCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
+                               cell.setup(with: homeViewModel.universe[indexPath.row])
+                               coordinator.value = cell.veue
+                               coordinator.start()            default:
+                break
+
+        }
+        //        let coordinator = SelectCoordinator(navigationController: navigationController!)
+        //        let cell: HomeCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
+        //        cell.setup(with: homeViewModel.universe[indexPath.row])
+        //        coordinator.value = cell.veue
+        //        coordinator.start()
         
     }
+    
 }
 
 //MARK:- UICollectionViewDataSource

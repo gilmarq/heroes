@@ -27,6 +27,7 @@
 		7C042045260E6AF300091C9B /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C042044260E6AF300091C9B /* HomeViewControllerTests.swift */; };
 		7C042048260EB87B00091C9B /* DecodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C042047260EB87B00091C9B /* DecodableTests.swift */; };
 		7C0CCAFE26081D2C0013F4F1 /* QuizViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0CCAFD26081D2C0013F4F1 /* QuizViewModel.swift */; };
+		7C29B774264CA0CE00333504 /* EditComics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C29B773264CA0CE00333504 /* EditComics.swift */; };
 		7C63CB352612548800560823 /* PreferredViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C63CB342612548800560823 /* PreferredViewModelTests.swift */; };
 		7C63CB3B2612583E00560823 /* SelectModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C63CB3A2612583E00560823 /* SelectModelTests.swift */; };
 		7C63CB3D26136B6A00560823 /* QuizViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C63CB3C26136B6A00560823 /* QuizViewModelTests.swift */; };
@@ -36,7 +37,8 @@
 		7C63CC4D2632843200560823 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C63CC4B2632843200560823 /* LoginViewController.swift */; };
 		7C63CC4E2632843200560823 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C63CC4C2632843200560823 /* LoginViewController.xib */; };
 		7C63CC512632876000560823 /* LoginCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C63CC502632876000560823 /* LoginCoordinator.swift */; };
-		7C7448D926426BD8003CB929 /* Envoutement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7448D826426BD8003CB929 /* Envoutement.swift */; };
+		7C7448DC264615D0003CB929 /* MarvelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7448DB264615D0003CB929 /* MarvelAPI.swift */; };
+		7C7448E0264616BE003CB929 /* MarvelClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7448DF264616BE003CB929 /* MarvelClass.swift */; };
 		7CEDBF3A25F45EC900EA76F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEDBF3925F45EC900EA76F5 /* AppDelegate.swift */; };
 		7CEDBF4625F45ECA00EA76F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CEDBF4425F45ECA00EA76F5 /* LaunchScreen.storyboard */; };
 		7CEDBF5125F45ECA00EA76F5 /* HeroiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEDBF5025F45ECA00EA76F5 /* HeroiTests.swift */; };
@@ -119,6 +121,7 @@
 		7C042044260E6AF300091C9B /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
 		7C042047260EB87B00091C9B /* DecodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableTests.swift; sourceTree = "<group>"; };
 		7C0CCAFD26081D2C0013F4F1 /* QuizViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewModel.swift; sourceTree = "<group>"; };
+		7C29B773264CA0CE00333504 /* EditComics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditComics.swift; sourceTree = "<group>"; };
 		7C63CB342612548800560823 /* PreferredViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferredViewModelTests.swift; sourceTree = "<group>"; };
 		7C63CB3A2612583E00560823 /* SelectModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectModelTests.swift; sourceTree = "<group>"; };
 		7C63CB3C26136B6A00560823 /* QuizViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewModelTests.swift; sourceTree = "<group>"; };
@@ -128,7 +131,8 @@
 		7C63CC4B2632843200560823 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7C63CC4C2632843200560823 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		7C63CC502632876000560823 /* LoginCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCoordinator.swift; sourceTree = "<group>"; };
-		7C7448D826426BD8003CB929 /* Envoutement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Envoutement.swift; sourceTree = "<group>"; };
+		7C7448DB264615D0003CB929 /* MarvelAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAPI.swift; sourceTree = "<group>"; };
+		7C7448DF264616BE003CB929 /* MarvelClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelClass.swift; sourceTree = "<group>"; };
 		7CEDBF3625F45EC900EA76F5 /* Heroi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Heroi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CEDBF3925F45EC900EA76F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CEDBF4525F45ECA00EA76F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -356,12 +360,21 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
-		7C7448DA26426BDC003CB929 /* Service */ = {
+		7C7448DD264615D5003CB929 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				7C7448D826426BD8003CB929 /* Envoutement.swift */,
+				7C7448DE26461687003CB929 /* Marvel */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		7C7448DE26461687003CB929 /* Marvel */ = {
+			isa = PBXGroup;
+			children = (
+				7C7448DB264615D0003CB929 /* MarvelAPI.swift */,
+				7C7448DF264616BE003CB929 /* MarvelClass.swift */,
+			);
+			path = Marvel;
 			sourceTree = "<group>";
 		};
 		7CEDBF2D25F45EC900EA76F5 = {
@@ -436,6 +449,7 @@
 			isa = PBXGroup;
 			children = (
 				7CEDBF6C25F45F5D00EA76F5 /* Scene */,
+				7C7448DD264615D5003CB929 /* Service */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -461,7 +475,6 @@
 				7CFB5CAA25FDC3B300FB2B5B /* ShowHero */,
 				7CFB5CA225FD5D3000FB2B5B /* Preferred */,
 				7CEDBF6E25F45F9800EA76F5 /* Home */,
-				7C7448DA26426BDC003CB929 /* Service */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -525,6 +538,7 @@
 			children = (
 				7CEDBF8525F4610B00EA76F5 /* HomeView.xib */,
 				7CEDBFB925FB2BC700EA76F5 /* HomeViewController.swift */,
+				7C29B773264CA0CE00333504 /* EditComics.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -922,11 +936,11 @@
 				7CEDBF7C25F460C100EA76F5 /* UITableViewCell+Extrension.swift in Sources */,
 				7CFB5CBC260047A300FB2B5B /* PreferredModal.swift in Sources */,
 				7CFB5CAE25FDCB1000FB2B5B /* PreferredTableViewCell.swift in Sources */,
-				7C7448D926426BD8003CB929 /* Envoutement.swift in Sources */,
 				7C042032260D2B5E00091C9B /* CustomiViews.swift in Sources */,
 				7C04200D2609819200091C9B /* HomeCoordinator.swift in Sources */,
 				7CEDBF3A25F45EC900EA76F5 /* AppDelegate.swift in Sources */,
 				7CFB5CCF2602EDF000FB2B5B /* ShowHeroModel.swift in Sources */,
+				7C7448E0264616BE003CB929 /* MarvelClass.swift in Sources */,
 				7C0420222609ABA400091C9B /* ShowHeroCoordinator.swift in Sources */,
 				7C0420182609A00A00091C9B /* Coordinator.swift in Sources */,
 				7CFB5CC226004F3300FB2B5B /* SelectModel.swift in Sources */,
@@ -937,7 +951,9 @@
 				7CFB5CC026004F1F00FB2B5B /* SelectViewModel.swift in Sources */,
 				7C0420092608354F00091C9B /* QuizModel.swift in Sources */,
 				7CFB5CCC2602E5A200FB2B5B /* ShowHeroViewController.swift in Sources */,
+				7C29B774264CA0CE00333504 /* EditComics.swift in Sources */,
 				7CEDBF7625F460B500EA76F5 /* ProtocoloReusableView.swift in Sources */,
+				7C7448DC264615D0003CB929 /* MarvelAPI.swift in Sources */,
 				7C04201226098F6200091C9B /* AppCoordinator.swift in Sources */,
 				7C63CC4D2632843200560823 /* LoginViewController.swift in Sources */,
 				7C04201F2609AAF400091C9B /* PreferredCoordinator.swift in Sources */,
