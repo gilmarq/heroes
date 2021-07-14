@@ -41,7 +41,8 @@ class HomeCell: UICollectionViewCell, NibLoadableView ,ReusableView {
     }
 
     func setuph() {
-        imageCard.layer.opacity = 40
+        imageCard.alpha = 0.3
+        cardView.layer.borderColor = UIColor.darkGray.cgColor
     }
     
     func setupCard(){
@@ -50,5 +51,12 @@ class HomeCell: UICollectionViewCell, NibLoadableView ,ReusableView {
         cardView.layer.borderWidth = 1
         cardView.layer.cornerRadius = 10
     }
+
+     func setupCardh(){
+            cardView.layer.masksToBounds = true
+
+            cardView.layer.cornerRadius = 10
+        
+        }
     
 }

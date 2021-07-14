@@ -8,8 +8,6 @@
 
 import UIKit
 
-//MARK: - enum
-
 class PreferredViewController: UIViewController {
 
     let preferredCoordinator =  PreferredCoordinator.self
@@ -19,12 +17,14 @@ class PreferredViewController: UIViewController {
     var name: String?
     var currentPage =  0
     var total = 0
+     var value = ""
     
     @IBOutlet weak var cardTitle: UILabel!
     @IBOutlet weak var subTitle: UILabel!
     @IBOutlet weak var oneTile: UILabel!
     @IBOutlet weak var TableView: UITableView!
-    var value = ""
+    @IBOutlet weak var loanding: UIActivityIndicatorView!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,18 +36,21 @@ class PreferredViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         setupNavBarBack()
     }
-    
+
+    //MARK: - Method
     func setupNavBarBack(){
         self.navigationController?.isNavigationBarHidden = false
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: " ", style: UIBarButtonItem.Style.plain, target: nil, action: nil)
     }
+
        func loadHeroes() {
                 MarvelAPI.loadHeros(name: name, page: currentPage) { (info) in
                    if let info = info {
                        self.heros += info.data.results
                        self.total = info.data.total
+                       self.loanding.isHidden = true
                        self.TableView.reloadData()
                    }
                }

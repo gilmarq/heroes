@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="TableView" destination="TLZ-L5-Ahb" id="dF7-fJ-aDI"/>
                 <outlet property="cardTitle" destination="Iqm-BR-TVT" id="Pua-U1-VtP"/>
+                <outlet property="loanding" destination="xTs-Rc-a4c" id="Pqx-kj-KYp"/>
                 <outlet property="oneTile" destination="Iqm-BR-TVT" id="Oc9-Ck-nkS"/>
                 <outlet property="subTitle" destination="1xB-ib-JZV" id="ygK-hB-i9V"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -64,11 +65,21 @@
                         <outlet property="delegate" destination="-1" id="nXv-fB-GQA"/>
                     </connections>
                 </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="xTs-Rc-a4c">
+                    <rect key="frame" x="100" y="396" width="175" height="20"/>
+                    <color key="color" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xTs-Rc-a4c" secondAttribute="trailing" constant="100" id="7Ep-RE-cCw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="xTs-Rc-a4c" secondAttribute="bottom" constant="362" id="EJK-em-DoT"/>
+                <constraint firstItem="xTs-Rc-a4c" firstAttribute="top" secondItem="8Us-ph-gTz" secondAttribute="bottom" constant="266" id="Fcp-HZ-SMv"/>
                 <constraint firstItem="8Us-ph-gTz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="KQw-tN-uFT"/>
+                <constraint firstItem="xTs-Rc-a4c" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="100" id="ROJ-ga-LqT"/>
                 <constraint firstAttribute="bottom" secondItem="TLZ-L5-Ahb" secondAttribute="bottom" id="TMd-jU-Ag7"/>
+                <constraint firstItem="xTs-Rc-a4c" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="UY1-i6-CSf"/>
+                <constraint firstItem="xTs-Rc-a4c" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XHe-ic-Ezw"/>
                 <constraint firstItem="TLZ-L5-Ahb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="b0Z-eX-kPj"/>
                 <constraint firstItem="TLZ-L5-Ahb" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-10" id="kri-ya-jFa"/>
                 <constraint firstItem="8Us-ph-gTz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="tZF-Uf-pmP"/>
