@@ -32,7 +32,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
             endingLineNumber = "17"
-            landmarkName = "formtJson()"
+            landmarkName = "formtJsonMavel()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -97,22 +97,6 @@
             startingLineNumber = "50"
             endingLineNumber = "50"
             landmarkName = "refreshQuiz()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "CEF0090A-84C7-4F27-B5E5-D08F3DBBF480"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Heroi/App/Scene/Quiz/View/QuizViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
-            landmarkName = "getQuiz()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -231,15 +215,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "73654810-0F41-4880-A38D-6CC15AC109C2"
+            uuid = "7046F501-C991-4C72-8BFB-45B532160F3F"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Heroi/App/Scene/Select/View/SelectViewController.swift"
+            filePath = "Heroi/App/Scene/Preferred/ViewModel/PreferredViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "109"
-            endingLineNumber = "109"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "loadHeroes()"
             landmarkType = "7">
          </BreakpointContent>
@@ -247,17 +231,65 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6AB45A8E-918C-4B08-B95D-F4D26CBAE55B"
+            uuid = "35C86E0A-133F-4595-A535-9F34E7325B83"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Heroi/App/Scene/Preferred/View/PreferredViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2762AD0F-AB42-4146-99CF-C03D0C60EB08"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Heroi/App/Service/Marvel/MarvelAPI.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "loadHeros(name:page:onComplete:)"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "loadComic(name:onComplete:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2762AD0F-AB42-4146-99CF-C03D0C60EB08 - 6bd2cd7c503eb50b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Heroi.MarvelAPI.loadComic(name: Swift.Optional&lt;Swift.String&gt;, onComplete: (Swift.Optional&lt;Heroi.MarvelInfo&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Heroi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gilmarqueiroz/Desktop/Heroi/Heroi/App/Service/Marvel/MarvelAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "1803">
+               </Location>
+               <Location
+                  uuid = "2762AD0F-AB42-4146-99CF-C03D0C60EB08 - 8b71eb333c810a76"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in static Heroi.MarvelAPI.loadComic(name: Swift.Optional&lt;Swift.String&gt;, onComplete: (Swift.Optional&lt;Heroi.MarvelInfo&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Heroi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gilmarqueiroz/Desktop/Heroi/Heroi/App/Service/Marvel/MarvelAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "187">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -16,5 +16,9 @@ class HomeViewModel {
     func formtJson(){
         universe = [HomeModel].formatJson("HomeMock") ?? []
     }
+
+    func validarCell(){
+        
+    }
    
 }

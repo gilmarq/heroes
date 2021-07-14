@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -23,13 +23,22 @@
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StarWars" translatesAutoresizingMaskIntoConstraints="NO" id="k9V-jV-Hn1">
                                 <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Em Construção " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLB-aa-d5D">
+                                <rect key="frame" x="16" y="21" width="168" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="k9V-jV-Hn1" firstAttribute="leading" secondItem="IqK-Xx-WkM" secondAttribute="leading" id="2NH-Jd-e1s"/>
                             <constraint firstAttribute="bottom" secondItem="k9V-jV-Hn1" secondAttribute="bottom" id="MbZ-ZJ-zvB"/>
+                            <constraint firstItem="YLB-aa-d5D" firstAttribute="leading" secondItem="IqK-Xx-WkM" secondAttribute="leading" constant="16" id="PFX-r8-tMs"/>
+                            <constraint firstAttribute="bottom" secondItem="YLB-aa-d5D" secondAttribute="bottom" constant="8" id="Sgo-7M-hW6"/>
                             <constraint firstAttribute="trailing" secondItem="k9V-jV-Hn1" secondAttribute="trailing" id="krV-FE-h6d"/>
                             <constraint firstAttribute="width" constant="200" id="mRg-JA-9Eh"/>
+                            <constraint firstAttribute="trailing" secondItem="YLB-aa-d5D" secondAttribute="trailing" constant="16" id="wEG-rk-San"/>
                             <constraint firstItem="k9V-jV-Hn1" firstAttribute="top" secondItem="IqK-Xx-WkM" secondAttribute="top" id="wFN-Hi-l3C"/>
                             <constraint firstAttribute="height" constant="50" id="yEK-rP-cAJ"/>
                         </constraints>
@@ -48,8 +57,9 @@
             <connections>
                 <outlet property="cardView" destination="IqK-Xx-WkM" id="Zgp-lS-8nh"/>
                 <outlet property="imageCard" destination="k9V-jV-Hn1" id="xTc-sx-EBc"/>
+                <outlet property="setupLabel" destination="YLB-aa-d5D" id="VNT-tK-87n"/>
             </connections>
-            <point key="canvasLocation" x="315.94202898550725" y="104.46428571428571"/>
+            <point key="canvasLocation" x="314.49275362318843" y="104.46428571428571"/>
         </collectionViewCell>
     </objects>
     <resources>

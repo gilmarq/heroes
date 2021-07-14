@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -10,34 +10,44 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="61" id="KGk-i7-Jjw" customClass="PreferredTableViewCell" customModule="Heroi" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PreferredTableViewCell" customModule="Heroi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="disney" translatesAutoresizingMaskIntoConstraints="NO" id="0lC-mC-7OB">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0lC-mC-7OB">
+                        <rect key="frame" x="10" y="10" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="iut-3P-h95"/>
+                            <constraint firstAttribute="height" constant="50" id="lHP-UG-IOA"/>
+                        </constraints>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nome do heroi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dK1-HA-jEd">
+                        <rect key="frame" x="70" y="23" width="204" height="24"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="0lC-mC-7OB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="CsA-JS-VBy"/>
-                    <constraint firstItem="0lC-mC-7OB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ERo-ra-mSe"/>
-                    <constraint firstAttribute="trailing" secondItem="0lC-mC-7OB" secondAttribute="trailing" id="JJe-67-0ng"/>
-                    <constraint firstAttribute="bottom" secondItem="0lC-mC-7OB" secondAttribute="bottom" id="Psf-Xq-Mwa"/>
-                    <constraint firstItem="0lC-mC-7OB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="uAA-Ih-1fF"/>
+                    <constraint firstAttribute="bottom" secondItem="0lC-mC-7OB" secondAttribute="bottom" constant="10" id="0gX-1J-VgD"/>
+                    <constraint firstItem="dK1-HA-jEd" firstAttribute="centerY" secondItem="0lC-mC-7OB" secondAttribute="centerY" id="120-Df-Rb8"/>
+                    <constraint firstItem="0lC-mC-7OB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Hrg-16-Cf2"/>
+                    <constraint firstItem="0lC-mC-7OB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="NEq-a1-GXm"/>
+                    <constraint firstItem="dK1-HA-jEd" firstAttribute="leading" secondItem="0lC-mC-7OB" secondAttribute="trailing" constant="10" id="hEb-T8-93o"/>
+                    <constraint firstAttribute="trailing" secondItem="0lC-mC-7OB" secondAttribute="trailing" constant="230" id="htY-WR-wJY"/>
+                    <constraint firstAttribute="trailing" secondItem="dK1-HA-jEd" secondAttribute="trailing" constant="16" id="wXd-uU-Ya2"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="cardView" destination="H2p-sc-9uM" id="dja-eM-LTw"/>
                 <outlet property="imageHereo" destination="0lC-mC-7OB" id="rtn-zd-ptH"/>
+                <outlet property="nameHeroisLabel" destination="dK1-HA-jEd" id="vab-ag-elL"/>
             </connections>
-            <point key="canvasLocation" x="50.724637681159422" y="61.272321428571423"/>
+            <point key="canvasLocation" x="50.724637681159422" y="73.995535714285708"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="disney" width="299" height="169"/>
-    </resources>
 </document>

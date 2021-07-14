@@ -10,7 +10,7 @@ import UIKit
 
 class PreferredCoordinator {
     
-    var value = ""
+    var value: String?
     private let navigationController: UINavigationController
     private var viewController: PreferredViewController!
     
@@ -20,6 +20,7 @@ class PreferredCoordinator {
     
     func start() {
         self.viewController = PreferredViewController()
+        viewController.name = value
         self.navigationController.pushViewController(self.viewController, animated: false)
     }
 }

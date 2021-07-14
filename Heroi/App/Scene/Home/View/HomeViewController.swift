@@ -20,8 +20,9 @@ enum heroes: String {
 //    case StarWars = "StarWars"
 //    case disney = "disney"
 //}
+
 class HomeViewController: UIViewController {
-    
+
     //MARK:- Outlet
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -79,36 +80,17 @@ extension HomeViewController: UICollectionViewDelegate{
         switch value.image {
             case heroes.marvel.rawValue:
 
-                let coordinator = SelectCoordinator(navigationController: navigationController!)
+            let coordinator = SearchCoordinator(navigationController: navigationController!)
                 let cell: HomeCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
+
                 cell.setup(with: homeViewModel.universe[indexPath.row])
-                coordinator.value = cell.veue
                 coordinator.start()
 
-            case heroes.dc.rawValue:
-                let coordinator = SelectCoordinator(navigationController: navigationController!)
-                               let cell: HomeCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
-                               cell.setup(with: homeViewModel.universe[indexPath.row])
-                               coordinator.value = cell.veue
-                               coordinator.start()
-            case heroes.starWars.rawValue:
-
-                 let coordinator = SelectCoordinator(navigationController: navigationController!)
-                               let cell: HomeCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
-                               cell.setup(with: homeViewModel.universe[indexPath.row])
-                               coordinator.value = cell.veue
-                               coordinator.start()            default:
-                break
+            default:
+            break
 
         }
-        //        let coordinator = SelectCoordinator(navigationController: navigationController!)
-        //        let cell: HomeCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
-        //        cell.setup(with: homeViewModel.universe[indexPath.row])
-        //        coordinator.value = cell.veue
-        //        coordinator.start()
-        
     }
-    
 }
 
 //MARK:- UICollectionViewDataSource
@@ -117,7 +99,17 @@ extension HomeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: HomeCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
         cell.setup(with: homeViewModel.universe[indexPath.row])
-        return cell
+
+         let value = homeViewModel.universe[indexPath.row]
+        switch value.image {
+       case heroes.marvel.rawValue:
+        cell.setHidenn()
+             default:
+                cell.setuph()
+                 break
+        cell.setHidenn()
+        }
+         return cell
     }
 }
 
@@ -131,6 +123,6 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
         
         return CGSize(width: width, height: heigth)
     }
-    
+
 }
 

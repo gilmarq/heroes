@@ -13,6 +13,7 @@ struct MarvelInfo: Codable {
     let status: String
     let data: MarvelData
 }
+
 struct MarvelData: Codable {
     let offset: Int
     let limit: Int
@@ -20,6 +21,7 @@ struct MarvelData: Codable {
     let count: Int
     let results: [Hero]
 }
+
 struct Hero: Codable {
     let id: Int
     let name: String
@@ -27,6 +29,7 @@ struct Hero: Codable {
     let thumbnail: Thumbnail
     let urls: [HeroURL]
 }
+
 struct Thumbnail: Codable {
     let path: String
     let ext: String
@@ -40,6 +43,7 @@ struct Thumbnail: Codable {
         case ext = "extension"
     }
 }
+
 struct HeroURL: Codable {
     let type: String
     let url: String
