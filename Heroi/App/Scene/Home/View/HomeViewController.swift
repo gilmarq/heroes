@@ -76,7 +76,6 @@ extension HomeViewController: UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 
         let value = homeViewModel.universe[indexPath.row]
-        print(value.image)
         switch value.image {
             case heroes.marvel.rawValue:
 
