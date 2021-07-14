@@ -9,16 +9,21 @@
 import UIKit
 
 class QuizCoordinator {
+
+    var heros:Hero
     var value = ""
+    
     private let navigationController: UINavigationController
     private var viewController: QuizViewController!
     
-    init(navigationController: UINavigationController) {
+    init(navigationController: UINavigationController, heros: Hero) {
+        self.heros = heros
         self.navigationController = navigationController
     }
     
     func start() {
         self.viewController = QuizViewController()
+        self.viewController.heros = heros
         self.navigationController.pushViewController(self.viewController, animated: false)
     }
 }

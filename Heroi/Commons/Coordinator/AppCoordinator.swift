@@ -11,14 +11,14 @@ import UIKit
 final class AppCoordinator {
     
     private let navigationController: UINavigationController
-    private var childCoordinator: LoginCoordinator!
+    private var childCoordinator: HomeCoordinator!
     
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
     
     func start() {
-        let coordinator = LoginCoordinator(
+        let coordinator = HomeCoordinator(
             navigationController: self.navigationController
         )
         

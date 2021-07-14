@@ -10,6 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="Heroi" customModuleProvider="target">
             <connections>
+                <outlet property="msgError" destination="B6r-I0-bjL" id="yDF-be-dET"/>
+                <outlet property="tfEmail" destination="Gjc-FJ-eor" id="jzn-Oy-Dk3"/>
+                <outlet property="tfPassword" destination="ce4-PU-scm" id="L9e-Ll-Y6l"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -67,20 +70,42 @@
                     <state key="normal" title="Sing in">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="actionEmail:" destination="-1" eventType="touchUpInside" id="GJ1-6P-mwi"/>
+                    </connections>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail ou Senha  invalido " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6r-I0-bjL">
+                    <rect key="frame" x="16" y="328" width="382" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HzR-4T-4kv">
+                    <rect key="frame" x="16" y="747" width="382" height="30"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Cadastrar ">
+                        <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
                 </button>
             </subviews>
             <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="B6r-I0-bjL" firstAttribute="trailing" secondItem="ce4-PU-scm" secondAttribute="trailing" id="Aix-HE-RRn"/>
                 <constraint firstItem="ce4-PU-scm" firstAttribute="leading" secondItem="Gjc-FJ-eor" secondAttribute="leading" id="BAJ-oQ-L1c"/>
+                <constraint firstItem="HzR-4T-4kv" firstAttribute="leading" secondItem="B6r-I0-bjL" secondAttribute="leading" id="E7E-W2-Ihv"/>
                 <constraint firstItem="Gjc-FJ-eor" firstAttribute="top" secondItem="RUC-mw-XjI" secondAttribute="bottom" constant="70" id="JJX-4O-oKO"/>
                 <constraint firstItem="ce4-PU-scm" firstAttribute="trailing" secondItem="Gjc-FJ-eor" secondAttribute="trailing" id="Q63-kY-wPN"/>
                 <constraint firstItem="RUC-mw-XjI" firstAttribute="trailing" secondItem="ofo-xS-Gxz" secondAttribute="trailing" id="WK8-0o-iGj"/>
+                <constraint firstItem="zlg-CA-f2l" firstAttribute="top" secondItem="HzR-4T-4kv" secondAttribute="bottom" constant="10" id="YM6-D0-Ter"/>
                 <constraint firstItem="ofo-xS-Gxz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="ZVC-Rk-AxO"/>
                 <constraint firstItem="Gjc-FJ-eor" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="ZnB-Q2-rgw"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ofo-xS-Gxz" secondAttribute="trailing" constant="16" id="ape-yk-LLv"/>
+                <constraint firstItem="HzR-4T-4kv" firstAttribute="trailing" secondItem="B6r-I0-bjL" secondAttribute="trailing" id="dKh-Ka-1IB"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Gjc-FJ-eor" secondAttribute="trailing" constant="16" id="f2g-ng-o4z"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="zlg-CA-f2l" secondAttribute="bottom" constant="20" id="g2Y-8m-Eay"/>
+                <constraint firstItem="B6r-I0-bjL" firstAttribute="top" secondItem="ce4-PU-scm" secondAttribute="bottom" constant="8" id="gZd-4d-WlG"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zlg-CA-f2l" secondAttribute="trailing" constant="16" id="hb1-hr-VIa"/>
+                <constraint firstItem="B6r-I0-bjL" firstAttribute="leading" secondItem="ce4-PU-scm" secondAttribute="leading" id="nXJ-4X-CWc"/>
                 <constraint firstItem="RUC-mw-XjI" firstAttribute="leading" secondItem="ofo-xS-Gxz" secondAttribute="leading" id="qbe-GT-bJA"/>
                 <constraint firstItem="zlg-CA-f2l" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="qkc-Iu-ggD"/>
                 <constraint firstItem="ofo-xS-Gxz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="sfK-qF-jcy"/>

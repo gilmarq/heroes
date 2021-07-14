@@ -8,16 +8,30 @@
 
 import UIKit
 
+enum heroes: String {
+    case marvel = "Marvel"
+    case dc = "DC"
+    case starWars = "StarWars"
+}
+
+//enum comics: String {
+//    case Marvel = "Marvel"
+//    case DC = "DC"
+//    case StarWars = "StarWars"
+//    case disney = "disney"
+//}
+
 class HomeViewController: UIViewController {
-    
+
     //MARK:- Outlet
     @IBOutlet weak var collectionView: UICollectionView!
     
-       //MARK:- o
+    //MARK:- o
+    
     var universe: [HomeModel] = []
     var homeViewModel = HomeViewModel()
     var imagemStrig = ""
-    
+    var value = ""
     //MARK:- parameter
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,13 +74,22 @@ extension HomeViewController: UICollectionViewDelegate{
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        let coordinator = SelectCoordinator(navigationController: navigationController!)
-        let cell: HomeCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
-        cell.setup(with: homeViewModel.universe[indexPath.row])
-        coordinator.value = cell.veue
-        coordinator.start()
-        
+
+        let value = homeViewModel.universe[indexPath.row]
+        print(value.image)
+        switch value.image {
+            case heroes.marvel.rawValue:
+
+            let coordinator = SearchCoordinator(navigationController: navigationController!)
+                let cell: HomeCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
+
+                cell.setup(with: homeViewModel.universe[indexPath.row])
+                coordinator.start()
+
+            default:
+            break
+
+        }
     }
 }
 
@@ -76,7 +99,17 @@ extension HomeViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: HomeCell = collectionView.dequeueReusableCell(forIndexPath: indexPath)
         cell.setup(with: homeViewModel.universe[indexPath.row])
-        return cell
+
+         let value = homeViewModel.universe[indexPath.row]
+        switch value.image {
+       case heroes.marvel.rawValue:
+        cell.setHidenn()
+             default:
+                cell.setuph()
+                 break
+        cell.setHidenn()
+        }
+         return cell
     }
 }
 
@@ -90,6 +123,6 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
         
         return CGSize(width: width, height: heigth)
     }
-    
+
 }
 

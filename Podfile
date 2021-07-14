@@ -3,10 +3,12 @@
 
 target 'Heroi' do
   
-   pod 'Firebase'
    pod 'Alamofire', '~> 5.2'
    pod 'Kingfisher', '~> 4.0'
    pod 'SwiftHash'
+
+   pod 'Firebase/Core'
+   pod 'Firebase/Auth'
    
   target 'HeroiTests' do
     inherit! :search_paths

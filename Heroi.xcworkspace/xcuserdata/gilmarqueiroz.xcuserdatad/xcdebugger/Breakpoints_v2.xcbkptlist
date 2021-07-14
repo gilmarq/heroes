@@ -32,7 +32,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
             endingLineNumber = "17"
-            landmarkName = "formtJson()"
+            landmarkName = "formtJsonMavel()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -103,22 +103,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "CEF0090A-84C7-4F27-B5E5-D08F3DBBF480"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Heroi/App/Scene/Quiz/View/QuizViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
-            landmarkName = "getQuiz()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "82540A27-9C90-4430-97A0-4C845FDDAD32"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -146,113 +130,6 @@
             endingLineNumber = "12"
             landmarkName = "DecodableTests"
             landmarkType = "3">
-            <Locations>
-               <Location
-                  uuid = "8461DA0E-0236-434A-A4E1-611E118BF08F - 1347f01be0ae9b7c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "HeroiTests.DecodableTests.__deallocating_deinit"
-                  moduleName = "HeroiTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gilmarqueiroz/Desktop/Heroi/HeroiTests/DecodableTests.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  uuid = "8461DA0E-0236-434A-A4E1-611E118BF08F - f4ebe4f7ded2ad4e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "HeroiTests.DecodableTests.__allocating_init(invocation: Swift.Optional&lt;__C.NSInvocation&gt;) -&gt; HeroiTests.DecodableTests"
-                  moduleName = "HeroiTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gilmarqueiroz/Desktop/Heroi/HeroiTests/DecodableTests.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  uuid = "8461DA0E-0236-434A-A4E1-611E118BF08F - 6e057359fed78996"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "HeroiTests.DecodableTests.init(invocation: Swift.Optional&lt;__C.NSInvocation&gt;) -&gt; HeroiTests.DecodableTests"
-                  moduleName = "HeroiTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gilmarqueiroz/Desktop/Heroi/HeroiTests/DecodableTests.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "119">
-               </Location>
-               <Location
-                  uuid = "8461DA0E-0236-434A-A4E1-611E118BF08F - ed599098b2dba7c4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "HeroiTests.DecodableTests.__allocating_init(selector: ObjectiveC.Selector) -&gt; HeroiTests.DecodableTests"
-                  moduleName = "HeroiTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gilmarqueiroz/Desktop/Heroi/HeroiTests/DecodableTests.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "12">
-               </Location>
-               <Location
-                  uuid = "8461DA0E-0236-434A-A4E1-611E118BF08F - 549d825403a7e35c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "HeroiTests.DecodableTests.init(selector: ObjectiveC.Selector) -&gt; HeroiTests.DecodableTests"
-                  moduleName = "HeroiTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gilmarqueiroz/Desktop/Heroi/HeroiTests/DecodableTests.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "119">
-               </Location>
-               <Location
-                  uuid = "8461DA0E-0236-434A-A4E1-611E118BF08F - 131386fee2f8323f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "HeroiTests.DecodableTests.__allocating_init() -&gt; HeroiTests.DecodableTests"
-                  moduleName = "HeroiTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gilmarqueiroz/Desktop/Heroi/HeroiTests/DecodableTests.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "4">
-               </Location>
-               <Location
-                  uuid = "8461DA0E-0236-434A-A4E1-611E118BF08F - 160cd571951ba877"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "HeroiTests.DecodableTests.init() -&gt; HeroiTests.DecodableTests"
-                  moduleName = "HeroiTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/gilmarqueiroz/Desktop/Heroi/HeroiTests/DecodableTests.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "93">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -317,6 +194,102 @@
             endingLineNumber = "27"
             landmarkName = "testquestions()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "87EC14AE-BA5A-43E8-97A9-BD2DA5BCC050"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Heroi/Commons/Extension/UITextField+Extension.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "textFieldDidBeginEditing(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7046F501-C991-4C72-8BFB-45B532160F3F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Heroi/App/Scene/Preferred/ViewModel/PreferredViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "loadHeroes()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "35C86E0A-133F-4595-A535-9F34E7325B83"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Heroi/App/Scene/Preferred/View/PreferredViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2762AD0F-AB42-4146-99CF-C03D0C60EB08"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Heroi/App/Service/Marvel/MarvelAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "loadComic(name:onComplete:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2762AD0F-AB42-4146-99CF-C03D0C60EB08 - 6bd2cd7c503eb50b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static Heroi.MarvelAPI.loadComic(name: Swift.Optional&lt;Swift.String&gt;, onComplete: (Swift.Optional&lt;Heroi.MarvelInfo&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Heroi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gilmarqueiroz/Desktop/Heroi/Heroi/App/Service/Marvel/MarvelAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "1803">
+               </Location>
+               <Location
+                  uuid = "2762AD0F-AB42-4146-99CF-C03D0C60EB08 - 8b71eb333c810a76"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in static Heroi.MarvelAPI.loadComic(name: Swift.Optional&lt;Swift.String&gt;, onComplete: (Swift.Optional&lt;Heroi.MarvelInfo&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Heroi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gilmarqueiroz/Desktop/Heroi/Heroi/App/Service/Marvel/MarvelAPI.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "187">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -9,7 +9,10 @@
 import UIKit
 
 class SelectCoordinator {
-    var value = ""
+
+    var image: UIImageView!
+    var heros:Hero
+
     
     // MARK: - Instance dependencies
     private let navigationController: UINavigationController
@@ -18,14 +21,16 @@ class SelectCoordinator {
     private var viewController: SelectViewController!
     
     // MARK: - Initializers
-    init(navigationController: UINavigationController) {
+    init(navigationController: UINavigationController , heros: Hero) {
+        self.heros = heros
         self.navigationController = navigationController
     }
     
     // MARK: - Coordinator functions
     func start() {
         self.viewController = SelectViewController()
-        self.viewController.value = value
+
+        self.viewController.heros = heros
         self.navigationController.pushViewController(self.viewController, animated: false)
     }
 }

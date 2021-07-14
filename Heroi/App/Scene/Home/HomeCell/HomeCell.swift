@@ -14,7 +14,8 @@ protocol CellDelegate: class {
 }
 
 class HomeCell: UICollectionViewCell, NibLoadableView ,ReusableView {
-    
+    @IBOutlet weak var setupLabel: UILabel!
+
     @IBOutlet weak var imageCard: UIImageView!
     @IBOutlet weak var cardView: UIView!
     var home: HomeModel?
@@ -31,6 +32,16 @@ class HomeCell: UICollectionViewCell, NibLoadableView ,ReusableView {
         self.home = home
         self.veue = home.image
         self.imageCard.image = UIImage(named: home.image)
+
+    }
+
+    func setHidenn() {
+        self.setupLabel.isHidden = true
+        setupLabel.textColor = .black
+    }
+
+    func setuph() {
+        imageCard.layer.opacity = 40
     }
     
     func setupCard(){

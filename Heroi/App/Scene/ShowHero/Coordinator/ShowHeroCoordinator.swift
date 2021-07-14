@@ -9,19 +9,22 @@
 import UIKit
 
 class ShowHeroCoordinator {
-    
-    var value = ""
+
+    var heros:Hero
+    var value: Int = 0
     var imagemString = ""
     private let navigationController: UINavigationController
     private var viewController: ShowHeroViewController!
     
-    init(navigationController: UINavigationController) {
+    init(navigationController: UINavigationController, heros: Hero) {
+        self.heros = heros
         self.navigationController = navigationController
     }
     
     func start() {
         self.viewController = ShowHeroViewController()
-        self.viewController.value = value
+        self.viewController.totalCorrectAnswer = value
+        self.viewController.heros = heros
         self.navigationController.pushViewController(self.viewController, animated: false)
     }
 }

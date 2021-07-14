@@ -13,7 +13,16 @@ class SelectViewModel {
     var select: [SelectModel]?
     var text = ""
     
-    func formtJson(){
+    func formtJsonMavel(){
+        select = [SelectModel].formatJson("SelectMock")
+    }
+    func formtJsonDC(){
+        select = [SelectModel].formatJson("SelectMock")
+    }
+    func formtJsonStarWars(){
+        select = [SelectModel].formatJson("SelectMock")
+    }
+    func formtJsonDisaney(){
         select = [SelectModel].formatJson("SelectMock")
     }
 }
