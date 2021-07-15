@@ -6,10 +6,11 @@ Requisitos: <br >
 Xcode: 11,7 <br >
 iOS: 12<br >
 Swift: 5 <br >
+CoocoaPods<br >
 
 Projeto: <br >
-Arquitetura  MVVM-C, está sendo usando xib comunicação entre as telas com  Coordinator,<br > usando Collectio View e TableView todos os dados são Mock,<br >
-CoocoaPods porém ainda não está em uso.<br >
+Arquitetura  MVVM-C, está sendo usando xib comunicação entre as telas com Coordinator,<br > usando Collectio View e TableView todos os dados vem da API Marvel e do banco do firebase para uso de login,<br >
+CoocoaPods Alamofire, Kingfisher, SwiftHash, Firebase/Core,  Firebase/Auth .<br >
 
 Modo rodar: <br >
 Quando baixa o projeto execute um pod install.
