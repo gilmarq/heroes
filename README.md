@@ -9,7 +9,7 @@ Swift: 5 <br >
 CoocoaPods<br >
 
 Projeto: <br >
-Arquitetura  MVVM-C, está sendo usando xib comunicação entre as telas com Coordinator,<br > usando Collectio View e TableView todos os dados vem da API Marvel e do banco do firebase para uso de login,<br >
+Arquitetura  MVVM-C, está sendo usando xib comunicação entre as telas com Coordinator,<br > usando Collectio View e TableView os dados vem da API Marvel e do banco do firebase para uso de login, tela de quiz dados vem do Mock <br >
 CoocoaPods Alamofire, Kingfisher, SwiftHash, Firebase/Core,  Firebase/Auth .<br >
 
 Modo rodar: <br >
